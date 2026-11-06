@@ -1,0 +1,150 @@
+{
+  "config": {
+    "experiment": "1st_test",
+    "bearing": 3,
+    "sensor": 2,
+    "event_index": 225,
+    "multiplier": 5.0,
+    "consecutive": 3,
+    "trigger_level": "Alarm"
+  },
+  "frame_sha256": "61a68a000af3dddb789205882329d79c7c4432d39f9badfc788285da023bf50c",
+  "algorithm_sha256": "8273ac0ea158402ba1b559b13a12291989895355e8e1dc1213a23d72272cfe73",
+  "times": [
+    "2003-10-29T18:19:46",
+    "2003-10-29T18:49:46",
+    "2003-10-29T19:19:46",
+    "2003-10-29T19:49:46",
+    "2003-10-29T20:19:46",
+    "2003-10-29T20:49:46",
+    "2003-10-29T21:19:46",
+    "2003-10-29T21:49:46",
+    "2003-10-29T22:29:46",
+    "2003-10-29T22:59:46",
+    "2003-10-29T23:29:46",
+    "2003-10-29T23:59:46",
+    "2003-10-30T00:29:46",
+    "2003-10-30T00:59:46",
+    "2003-10-30T01:29:46",
+    "2003-10-30T02:09:46"
+  ],
+  "channel": 6,
+  "sources": [
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.29.18.19.46",
+      "sha256": "b8bda0da2cd955d2c1f6f8535122122f7a4a92ed57521a1a3a507a08535287c1",
+      "csv_rms": 0.16241264133205002,
+      "txt_rms": 0.16241264133205002,
+      "bytes": 1150311
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.29.18.49.46",
+      "sha256": "85e547a9aa2357c4247ca4ac092059d7cf35c2a2262f5fb5034516d07b701915",
+      "csv_rms": 0.16248750613027915,
+      "txt_rms": 0.16248750613027915,
+      "bytes": 1150519
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.29.19.19.46",
+      "sha256": "3fcb8a5a04c245ac9180dd05ce7ee99d91a13581a359979f7f6e1b5508fbe172",
+      "csv_rms": 0.15950622033692566,
+      "txt_rms": 0.15950622033692566,
+      "bytes": 1150544
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.29.19.49.46",
+      "sha256": "80ddc885ea2ce38d70291585627b3b8b14e199194825d51fc96f3d7f8a1206ef",
+      "csv_rms": 0.1615304368571137,
+      "txt_rms": 0.1615304368571137,
+      "bytes": 1150139
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.29.20.19.46",
+      "sha256": "b3a12cbe27b0736c99d502f257b3d5329402ef368deedda7a3e34564664518bc",
+      "csv_rms": 0.16049277768626577,
+      "txt_rms": 0.16049277768626577,
+      "bytes": 1150340
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.29.20.49.46",
+      "sha256": "e97541ac59fef9c440b5282ee4850d418f7f272ee7c48ff6b1581340caca13be",
+      "csv_rms": 0.1620945722157188,
+      "txt_rms": 0.1620945722157188,
+      "bytes": 1150055
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.29.21.19.46",
+      "sha256": "1f37ee6c4841f28ea210fd57c55c61d31f032ee76b58c3581b9042d812623cf1",
+      "csv_rms": 0.1615691108717586,
+      "txt_rms": 0.1615691108717586,
+      "bytes": 1150196
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.29.21.49.46",
+      "sha256": "72d60fa07c26a106ae2667d0c0c690eb90d5adcf82b6866d1534a8fed7c79282",
+      "csv_rms": 0.16160550715061123,
+      "txt_rms": 0.16160550715061123,
+      "bytes": 1150149
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.29.22.29.46",
+      "sha256": "6a709c950ebcc95a19775000755c38528852c7f6fc3fe44fabe975ce52d121d1",
+      "csv_rms": 0.16172307889737592,
+      "txt_rms": 0.16172307889737592,
+      "bytes": 1150527
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.29.22.59.46",
+      "sha256": "14640a57414ad920a44b854d582dd17b6bd4f498209b5e064ca9be31c305471f",
+      "csv_rms": 0.16270810067538316,
+      "txt_rms": 0.16270810067538316,
+      "bytes": 1150677
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.29.23.29.46",
+      "sha256": "ae0251cf2f353c93175f2f6cfe092447c0d00f460fb35add40f9eeb0715effcf",
+      "csv_rms": 0.1634413933570685,
+      "txt_rms": 0.1634413933570685,
+      "bytes": 1150665
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.29.23.59.46",
+      "sha256": "5d06abe0f8cea83137aaa710c508dd4173a4c8ebd3ef012ab562e36b48ea16b8",
+      "csv_rms": 0.16257154659924927,
+      "txt_rms": 0.16257154659924927,
+      "bytes": 1150476
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.30.00.29.46",
+      "sha256": "4cc5bf74369c5ff1963e50a0187b0955a301a6f3e0599450d7419a64b3a08cd7",
+      "csv_rms": 0.1620775959814947,
+      "txt_rms": 0.1620775959814947,
+      "bytes": 1150533
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.30.00.59.46",
+      "sha256": "30b04299c6d86779191be504cba0eb1cc266397c336f4a1f5d9f931211934650",
+      "csv_rms": 0.16229903227963577,
+      "txt_rms": 0.16229903227963577,
+      "bytes": 1150395
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.30.01.29.46",
+      "sha256": "7b3a0080d0adae9f07dce3628e89d853130462a601f330c85b7e870b0017c3f4",
+      "csv_rms": 0.16084266319819346,
+      "txt_rms": 0.16084266319819346,
+      "bytes": 1150936
+    },
+    {
+      "path": "data/raw/1st_test/1st_test/2003.10.30.02.09.46",
+      "sha256": "e35eecd95dbe587c4068b7ab67019048f3d8c12bffa7d6412b403325f36fa3d3",
+      "csv_rms": 0.16298749098258083,
+      "txt_rms": 0.16298749098258083,
+      "bytes": 1150345
+    }
+  ],
+  "history_points": 16,
+  "max_frequency_hz": 5000,
+  "note": "Precomputed from actual NASA TXT, not synthetic. Exact event only.",
+  "bundle_sha256": "2350fcada3772868cb61b9557b571e04a057a444f935fae5360e0a8c659d0d1a"
+}

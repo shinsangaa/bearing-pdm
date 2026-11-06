@@ -1,0 +1,726 @@
+{
+  "input": "C:\\bearing-pdm\\data\\processed\\nasa_ims_features.csv",
+  "input_sha256": "fd99152f2fa13b52dd2a6ea4888f2660c5201497bdf6d87bbb9b0a7f97eabac8",
+  "script_sha256": "7fdc0490994e24ad20c1b7f6207419881d1c3cbaa9e2341abf1b4c1ac2ce2ffa",
+  "inspection": {
+    "csv_columns": [
+      "source_path",
+      "test_id",
+      "bearing_id",
+      "channel_id",
+      "sensor_within_bearing",
+      "array_column",
+      "sampling_hz",
+      "sampling_hz_source",
+      "n_samples",
+      "snapshot_seconds",
+      "end_defect",
+      "rul_label_kind",
+      "rul_count_proxy",
+      "rul_calendar_hours_proxy",
+      "measurement_index",
+      "measured_at",
+      "dataset_end_at",
+      "elapsed_calendar_hours",
+      "interval_seconds",
+      "gap_before",
+      "segment_id",
+      "remaining_measurements",
+      "remaining_calendar_hours",
+      "elapsed_gap_excluded_hours_proxy",
+      "remaining_gap_excluded_hours_proxy",
+      "elapsed_operating_hours",
+      "rul_operating_hours",
+      "rms",
+      "std",
+      "peak",
+      "kurtosis",
+      "crest_factor",
+      "fft_centroid_hz",
+      "constant_signal",
+      "outlier_8std_count",
+      "fft_peak_1_hz",
+      "fft_peak_1_amplitude",
+      "fft_peak_2_hz",
+      "fft_peak_2_amplitude",
+      "fft_peak_3_hz",
+      "fft_peak_3_amplitude"
+    ],
+    "csv_rows": 8624,
+    "selected_sensor_rows": 8624,
+    "measurements": 2156,
+    "bearing_time_rows": 4312,
+    "first_at": "2003-10-22 12:06:24",
+    "last_at": "2003-11-25 23:39:56",
+    "dataset_end_at": "2003-11-25 23:39:56",
+    "target": "rul_calendar_hours_proxy",
+    "target_unit": "달력 시간(시간)",
+    "rul_label_kind": "test_end_proxy_not_exact_failure_time",
+    "target_range_hours": [
+      0.0,
+      827.5588888888889
+    ],
+    "channel_mapping": {
+      "3": [
+        5,
+        6
+      ],
+      "4": [
+        7,
+        8
+      ]
+    },
+    "sensor_rows_per_bearing": {
+      "3": 4312,
+      "4": 4312
+    },
+    "available_rul_columns": [
+      "rul_label_kind",
+      "rul_count_proxy",
+      "rul_calendar_hours_proxy",
+      "remaining_measurements",
+      "remaining_calendar_hours",
+      "remaining_gap_excluded_hours_proxy",
+      "rul_operating_hours"
+    ],
+    "rul_units": {
+      "rul_calendar_hours_proxy": "시간; 기록 공백을 포함한 종료까지 남은 달력 시간",
+      "rul_count_proxy": "회; 종료까지 남은 측정 파일 수",
+      "remaining_gap_excluded_hours_proxy": "시간; 긴 기록 공백 전체를 제외한 대리값, 실제 가동시간 아님",
+      "rul_operating_hours": "시간; 실제 가동시간 미상으로 결측"
+    },
+    "excluded_csv_columns": [
+      "array_column",
+      "bearing_id",
+      "channel_id",
+      "constant_signal",
+      "dataset_end_at",
+      "elapsed_calendar_hours",
+      "elapsed_gap_excluded_hours_proxy",
+      "elapsed_operating_hours",
+      "end_defect",
+      "gap_before",
+      "interval_seconds",
+      "measured_at",
+      "measurement_index",
+      "n_samples",
+      "outlier_8std_count",
+      "remaining_calendar_hours",
+      "remaining_gap_excluded_hours_proxy",
+      "remaining_measurements",
+      "rul_calendar_hours_proxy",
+      "rul_count_proxy",
+      "rul_label_kind",
+      "rul_operating_hours",
+      "sampling_hz",
+      "sampling_hz_source",
+      "segment_id",
+      "sensor_within_bearing",
+      "snapshot_seconds",
+      "source_path",
+      "test_id"
+    ]
+  },
+  "model_features": [
+    "sensor1_rms",
+    "sensor1_std",
+    "sensor1_peak",
+    "sensor1_kurtosis",
+    "sensor1_crest_factor",
+    "sensor1_fft_centroid_hz",
+    "sensor1_fft_peak_1_hz",
+    "sensor1_fft_peak_1_amplitude",
+    "sensor1_fft_peak_2_hz",
+    "sensor1_fft_peak_2_amplitude",
+    "sensor1_fft_peak_3_hz",
+    "sensor1_fft_peak_3_amplitude",
+    "sensor2_rms",
+    "sensor2_std",
+    "sensor2_peak",
+    "sensor2_kurtosis",
+    "sensor2_crest_factor",
+    "sensor2_fft_centroid_hz",
+    "sensor2_fft_peak_1_hz",
+    "sensor2_fft_peak_1_amplitude",
+    "sensor2_fft_peak_2_hz",
+    "sensor2_fft_peak_2_amplitude",
+    "sensor2_fft_peak_3_hz",
+    "sensor2_fft_peak_3_amplitude"
+  ],
+  "signal_features": [
+    "rms",
+    "std",
+    "peak",
+    "kurtosis",
+    "crest_factor",
+    "fft_centroid_hz",
+    "fft_peak_1_hz",
+    "fft_peak_1_amplitude",
+    "fft_peak_2_hz",
+    "fft_peak_2_amplitude",
+    "fft_peak_3_hz",
+    "fft_peak_3_amplitude"
+  ],
+  "split_audit": {
+    "train_measurements": 1724,
+    "test_measurements": 432,
+    "gap_measurements": 0,
+    "train_rows": 3448,
+    "test_rows": 864,
+    "train_first_at": "2003-10-22 12:06:24",
+    "train_last_at": "2003-11-21 22:16:56",
+    "test_first_at": "2003-11-21 22:26:56",
+    "test_last_at": "2003-11-25 23:39:56",
+    "time_overlap_count": 0,
+    "source_file_overlap_count": 0,
+    "strict_time_order": true,
+    "all_bearings_at_same_time_in_one_partition": true,
+    "passed": true
+  },
+  "sequence_audit": {
+    "train": {
+      "partition": "train",
+      "sequences": 2954,
+      "input_rows": 3448,
+      "excluded_endpoint_rows": 494,
+      "segment_lengths": {
+        "3": [
+          156,
+          79,
+          61,
+          216,
+          28,
+          48,
+          193,
+          112,
+          38,
+          305,
+          199,
+          3,
+          69,
+          107,
+          53,
+          18,
+          4,
+          35
+        ],
+        "4": [
+          156,
+          79,
+          61,
+          216,
+          28,
+          48,
+          193,
+          112,
+          38,
+          305,
+          199,
+          3,
+          69,
+          107,
+          53,
+          18,
+          4,
+          35
+        ]
+      },
+      "per_bearing_sequences": {
+        "3": 1477,
+        "4": 1477
+      },
+      "first_input_at": "2003-10-22 12:06:24",
+      "first_endpoint_at": "2003-10-22 13:19:13",
+      "last_endpoint_at": "2003-11-21 22:16:56",
+      "sequence_span_hours_range": [
+        1.2136111111111112,
+        2.5
+      ],
+      "future_after_endpoint_used": false,
+      "passed": true
+    },
+    "test": {
+      "partition": "test",
+      "sequences": 676,
+      "input_rows": 864,
+      "excluded_endpoint_rows": 188,
+      "segment_lengths": {
+        "3": [
+          132,
+          112,
+          68,
+          9,
+          6,
+          68,
+          33,
+          4
+        ],
+        "4": [
+          132,
+          112,
+          68,
+          9,
+          6,
+          68,
+          33,
+          4
+        ]
+      },
+      "per_bearing_sequences": {
+        "3": 338,
+        "4": 338
+      },
+      "first_input_at": "2003-11-21 22:26:56",
+      "first_endpoint_at": "2003-11-22 00:56:56",
+      "last_endpoint_at": "2003-11-25 16:07:32",
+      "sequence_span_hours_range": [
+        2.3369444444444443,
+        2.5
+      ],
+      "future_after_endpoint_used": false,
+      "passed": true
+    }
+  },
+  "sequence_length": 16,
+  "max_gap_seconds": 1200,
+  "sequence_policy": "분할 안의 동일 베어링 과거만 사용; 경계·측정 순번 누락·긴 기록 공백에서 분리",
+  "preprocessing": {
+    "kind": "training_median_then_standard_scaler",
+    "fit_rows": 3448,
+    "feature_names": [
+      "sensor1_rms",
+      "sensor1_std",
+      "sensor1_peak",
+      "sensor1_kurtosis",
+      "sensor1_crest_factor",
+      "sensor1_fft_centroid_hz",
+      "sensor1_fft_peak_1_hz",
+      "sensor1_fft_peak_1_amplitude",
+      "sensor1_fft_peak_2_hz",
+      "sensor1_fft_peak_2_amplitude",
+      "sensor1_fft_peak_3_hz",
+      "sensor1_fft_peak_3_amplitude",
+      "sensor2_rms",
+      "sensor2_std",
+      "sensor2_peak",
+      "sensor2_kurtosis",
+      "sensor2_crest_factor",
+      "sensor2_fft_centroid_hz",
+      "sensor2_fft_peak_1_hz",
+      "sensor2_fft_peak_1_amplitude",
+      "sensor2_fft_peak_2_hz",
+      "sensor2_fft_peak_2_amplitude",
+      "sensor2_fft_peak_3_hz",
+      "sensor2_fft_peak_3_amplitude"
+    ],
+    "imputer_medians": [
+      0.1480095370738823,
+      0.09422697658069493,
+      0.652,
+      3.8073408922730985,
+      4.336658335883973,
+      4122.090044498907,
+      987.3046875,
+      0.025939213361168095,
+      988.28125,
+      0.018961978698232775,
+      986.328125,
+      0.01602809702204293,
+      0.15352251911355652,
+      0.1004485841403393,
+      0.669,
+      3.763361492106559,
+      4.371765606996174,
+      4583.929915737581,
+      494.140625,
+      0.016180720443511633,
+      494.140625,
+      0.01385129173510758,
+      987.3046875,
+      0.011471221645131043
+    ],
+    "mean": [
+      0.14765191929727028,
+      0.09467448353320339,
+      0.6945461136890951,
+      4.21586332197688,
+      4.64814447425732,
+      4068.3697263147724,
+      1003.9609125761311,
+      0.026474361123568678,
+      1308.991115773637,
+      0.01912803095685423,
+      1916.3345372317285,
+      0.014990736305735162,
+      0.15031909328361684,
+      0.09899711548113721,
+      0.6913816705336427,
+      4.144694511122376,
+      4.5775103313123955,
+      4467.210314388445,
+      3026.9492164841936,
+      0.01647386991904473,
+      3082.3728202943735,
+      0.014051656063508083,
+      3412.2750620830916,
+      0.011622864470858647
+    ],
+    "scale": [
+      0.014419083518853525,
+      0.018617388036864788,
+      0.2275376518828032,
+      2.0110100598142715,
+      1.2031008565766976,
+      362.6120367314647,
+      218.00221088591192,
+      0.004151802317072369,
+      1429.504317997957,
+      0.0037617653253455216,
+      2126.3722996975516,
+      0.0039943935472726054,
+      0.014411905130232584,
+      0.017758700735399337,
+      0.1860154841944249,
+      1.4070558786816605,
+      0.996941363456939,
+      523.077640906383,
+      3820.4460427575477,
+      0.0025979242837003594,
+      3810.058632884733,
+      0.0020762779604361356,
+      3688.5624346934756,
+      0.00237592696038321
+    ],
+    "variance": [
+      0.00020790996952367336,
+      0.00034660713731519613,
+      0.05177338302433974,
+      4.0441614606742,
+      1.4474516710955834,
+      131487.4891825411,
+      47524.96395114561,
+      1.7237462480047488e-05,
+      2043482.5951748043,
+      1.4150878362971897e-05,
+      4521459.156921055,
+      1.595517981049303e-05,
+      0.00020770300948282428,
+      0.000315371451809473,
+      0.034601760360086345,
+      1.9798062457326198,
+      0.9938920821713804,
+      273610.21841618686,
+      14595807.965621805,
+      6.749210583840024e-06,
+      14516546.78601948,
+      4.310930168992839e-06,
+      13605492.83463186,
+      5.6450289210758e-06
+    ]
+  },
+  "target": "rul_calendar_hours_proxy",
+  "target_unit": "달력 시간(시간)",
+  "target_scale_hours": 383.13367153261146,
+  "target_scale_fitted_on": "원래 앞 80% 학습 행의 정답 평균",
+  "target_ranges_hours": {
+    "train": [
+      97.38333333333334,
+      827.5588888888889
+    ],
+    "eligible_test": [
+      7.54,
+      94.71666666666667
+    ]
+  },
+  "matched_endpoint_metrics": {
+    "overall": {
+      "bilstm": {
+        "MAE_hours": 57.49865536159939,
+        "RMSE_hours": 66.88139692870871
+      },
+      "random_forest": {
+        "MAE_hours": 86.22773625756436,
+        "RMSE_hours": 99.53082273890169
+      },
+      "last_train_target": {
+        "MAE_hours": 38.209533201840905,
+        "RMSE_hours": 45.070096915963234
+      },
+      "train_median": {
+        "MAE_hours": 313.1423109796187,
+        "RMSE_hours": 314.053263212099
+      }
+    },
+    "bearing_3": {
+      "bilstm": {
+        "MAE_hours": 66.65720093505779,
+        "RMSE_hours": 74.37297014852327
+      },
+      "random_forest": {
+        "MAE_hours": 96.67590146883815,
+        "RMSE_hours": 108.8089689491361
+      },
+      "last_train_target": {
+        "MAE_hours": 38.209533201840905,
+        "RMSE_hours": 45.07009691596323
+      },
+      "train_median": {
+        "MAE_hours": 313.1423109796187,
+        "RMSE_hours": 314.053263212099
+      }
+    },
+    "bearing_4": {
+      "bilstm": {
+        "MAE_hours": 48.340109788140985,
+        "RMSE_hours": 58.4371784188614
+      },
+      "random_forest": {
+        "MAE_hours": 75.77957104629058,
+        "RMSE_hours": 89.2937714871047
+      },
+      "last_train_target": {
+        "MAE_hours": 38.209533201840905,
+        "RMSE_hours": 45.07009691596323
+      },
+      "train_median": {
+        "MAE_hours": 313.1423109796187,
+        "RMSE_hours": 314.053263212099
+      }
+    }
+  },
+  "original_full_reference_metrics": {
+    "overall": {
+      "random_forest": {
+        "MAE_hours": 90.42975934133936,
+        "RMSE_hours": 104.08575690888495
+      },
+      "train_median": {
+        "MAE_hours": 315.5389525462963,
+        "RMSE_hours": 316.55843996875285
+      },
+      "last_train_target": {
+        "MAE_hours": 40.60617476851852,
+        "RMSE_hours": 47.88816942385812
+      }
+    },
+    "bearing_3": {
+      "random_forest": {
+        "MAE_hours": 101.69019827270733,
+        "RMSE_hours": 114.39123610713195
+      },
+      "train_median": {
+        "MAE_hours": 315.5389525462963,
+        "RMSE_hours": 316.55843996875285
+      },
+      "last_train_target": {
+        "MAE_hours": 40.60617476851853,
+        "RMSE_hours": 47.88816942385812
+      }
+    },
+    "bearing_4": {
+      "random_forest": {
+        "MAE_hours": 79.16932040997138,
+        "RMSE_hours": 92.6408909956795
+      },
+      "train_median": {
+        "MAE_hours": 315.5389525462963,
+        "RMSE_hours": 316.55843996875285
+      },
+      "last_train_target": {
+        "MAE_hours": 40.60617476851853,
+        "RMSE_hours": 47.88816942385812
+      }
+    }
+  },
+  "comparison_note": "BiLSTM의 MAE가 동일 최종 시점의 마지막 학습 정답 고정 기준보다 크거나 같다. 해당 기준 대비 개선을 입증하지 못했다.",
+  "reference_report": "C:\\bearing-pdm\\reports\\rul_baseline\\evaluation.json",
+  "reference_report_sha256": "b2ecbf9e346b0294afce17d444ce4c0abad71fb4db1b9fe4fd84fe5df4170664",
+  "reference_predictions": "C:\\bearing-pdm\\reports\\rul_baseline\\test_predictions.csv",
+  "reference_predictions_sha256": "fcce8db8dad3c808c167293039ec329c606c995242455a56af631e3f435b7397",
+  "same_original_split": true,
+  "fair_comparison_endpoint_rows": 676,
+  "epochs": 20,
+  "selected_epoch": 20,
+  "hidden_size": 32,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "device": "cpu",
+  "threads": 4,
+  "seed": 42,
+  "parameter_count": 15905,
+  "optimizer": "AdamW",
+  "weight_decay": 0.0001,
+  "gradient_clip_norm": 1.0,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.17817160821366568,
+      "evaluation_loss": 0.05392588639753105,
+      "MAE_hours": 80.07101592064531,
+      "RMSE_hours": 88.97109965732858
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.03149609742389794,
+      "evaluation_loss": 0.0485591826486517,
+      "MAE_hours": 77.38315056745037,
+      "RMSE_hours": 84.42790189241238
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.022164832223042816,
+      "evaluation_loss": 0.04116041563759894,
+      "MAE_hours": 71.59520483700402,
+      "RMSE_hours": 77.73027092488553
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.018874336611643464,
+      "evaluation_loss": 0.03908401363964617,
+      "MAE_hours": 69.04854431779347,
+      "RMSE_hours": 75.74428734089317
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.01645693496454787,
+      "evaluation_loss": 0.035751143043320735,
+      "MAE_hours": 64.97554042848766,
+      "RMSE_hours": 72.44280802720316
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.014614301734303168,
+      "evaluation_loss": 0.03717718979883829,
+      "MAE_hours": 66.57603524137217,
+      "RMSE_hours": 73.87348658261364
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.01242894134260386,
+      "evaluation_loss": 0.038680596999030495,
+      "MAE_hours": 67.91042989571575,
+      "RMSE_hours": 75.35236746460436
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.011363761563209682,
+      "evaluation_loss": 0.03900322614832831,
+      "MAE_hours": 66.6058176137208,
+      "RMSE_hours": 75.66596562441072
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.009722713041185485,
+      "evaluation_loss": 0.036711260990498686,
+      "MAE_hours": 64.7183295513908,
+      "RMSE_hours": 73.40911061241758
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.010061789602898793,
+      "evaluation_loss": 0.03839133542097179,
+      "MAE_hours": 65.90955365674421,
+      "RMSE_hours": 75.07008712659344
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.008681160136149313,
+      "evaluation_loss": 0.03798854082668498,
+      "MAE_hours": 64.71378427865393,
+      "RMSE_hours": 74.6752390285439
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.008660939337336379,
+      "evaluation_loss": 0.03987923864076829,
+      "MAE_hours": 66.87397850106845,
+      "RMSE_hours": 76.51097632157884
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.008486104621845137,
+      "evaluation_loss": 0.037990661172648155,
+      "MAE_hours": 65.22068776789658,
+      "RMSE_hours": 74.67732314532165
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.007305066163362223,
+      "evaluation_loss": 0.0355845622927744,
+      "MAE_hours": 62.13073897678393,
+      "RMSE_hours": 72.27383923729231
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.008070941400299948,
+      "evaluation_loss": 0.0334121400060562,
+      "MAE_hours": 61.328932024662926,
+      "RMSE_hours": 70.03295697462868
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.007665884294203491,
+      "evaluation_loss": 0.030720833248111624,
+      "MAE_hours": 59.01168797986433,
+      "RMSE_hours": 67.15321382400151
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.007383680089011778,
+      "evaluation_loss": 0.02792389570740906,
+      "MAE_hours": 55.25766037057529,
+      "RMSE_hours": 64.02333827475489
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.007347603978623227,
+      "evaluation_loss": 0.026503444809091867,
+      "MAE_hours": 53.432939326520184,
+      "RMSE_hours": 62.37369525112383
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.00765809578254829,
+      "evaluation_loss": 0.02305898097062693,
+      "MAE_hours": 48.66311710465511,
+      "RMSE_hours": 58.179550037449644
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.007898142417235781,
+      "evaluation_loss": 0.030472637754837436,
+      "MAE_hours": 57.49865536159939,
+      "RMSE_hours": 66.88139692870871
+    }
+  ],
+  "training_seconds": 7.2760278999994625,
+  "checkpoint_selection": "고정된 마지막 epoch; 평가 점수에 의한 선택 없음",
+  "refit_with_test": false,
+  "provisional": false,
+  "evaluation_status": "1st Test 내부 회고적 시간순 시퀀스 평가; 독립 실험 일반화 검증 아님",
+  "limitations": [
+    "정답 rul_calendar_hours_proxy는 시험 마지막 기록까지 남은 달력 시간의 대리값이다. 정확한 고장 시각이나 실제 잔여 수명·가동시간이 아니다.",
+    "학습·평가가 같은 1st Test와 같은 Bearing 3·4의 수명 궤적을 공유하는 회고적 내부 평가다. 독립 실험·다른 베어링·현장 일반화 성능을 검증하지 않았다.",
+    "학습 정답도 시험 종료 후 알려진 종료점을 이용해 생성되었다. 분할 시점에 해당 정답으로 학습한 모델을 실제 운용할 수 있었다는 뜻이 아니다.",
+    "측정 시각·측정 순번·종료 시각·RUL 파생 열·베어링 ID는 모델 특징에 넣지 않는다. 시각과 순번은 분할·순서·공백 검사에만 사용한다.",
+    "양방향 LSTM은 최종 입력 시점까지의 과거 관측만 양방향으로 처리한다. 예측 시점 이후의 신호나 정답은 입력에 없다.",
+    "학습·평가 시퀀스는 각 분할 안에서 독립적으로 만든다. 평가 초반의 입력을 채우려고 학습 구간을 끌어오지 않는다.",
+    "시퀀스 준비 구간과 긴 공백 뒤의 짧은 구간은 평가에서 제외된다. 기존 전체 평가와 대상이 달라지므로 공통 최종 시점에 맞춘 기준 모델 지표를 별도로 계산한다.",
+    "입력 간격은 일정하지 않다. 시퀀스는 관측 순서의 여러 시점이며 고정된 실제 시간 길이를 뜻하지 않는다. 공백 기준 기본값은 기존 전처리와 같은 20분이다.",
+    "겹치는 시퀀스와 두 베어링은 서로 독립인 수명 실험이 아니다. 시퀀스 수를 독립 실험 수로 해석하지 않는다.",
+    "매 epoch 평가 구간의 손실을 기록하지만 최종 모델은 사전에 정한 마지막 epoch다. 조기 종료·학습률 조정·체크포인트 선택에 평가 점수를 쓰지 않는다.",
+    "스케일러·결측 중앙값·정답 크기 조정은 앞쪽 학습 구간에만 적합한다. 평가 구간으로 재학습하거나 하이퍼파라미터를 선택하지 않는다.",
+    "학습 구간과 평가 구간의 RUL 범위가 겹치지 않는다. BiLSTM이 수학적으로 외삽할 수 있어도 종료 직전의 작은 RUL을 정확히 예측한다는 보장은 없다.",
+    "단순 기준도 학습 정답만 사용하지만 그 정답 자체는 종료 후의 회고적 대리값이다. 실제 이용 가능한 잔여 수명 기준으로 오인하면 안 된다."
+  ],
+  "model_output": "C:\\bearing-pdm\\models\\bilstm_rul.pt",
+  "command": "C:\\bearing-pdm\\.venv\\Scripts\\python.exe src\\train_bilstm_rul.py --epochs 20 --sequence-length 16 --hidden-size 32 --batch-size 32 --device cpu",
+  "versions": {
+    "python": "3.12.7",
+    "torch": "2.14.0+cu126",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "sklearn": "1.9.1"
+  },
+  "model_sha256": "881fdd180945c9dbb70b8ae106009c9df6a59eed31f3dcead9e2b241358b511b"
+}

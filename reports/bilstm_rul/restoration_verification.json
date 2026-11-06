@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "checkpoint_epoch": 20,
+  "inference_only": true,
+  "retrained": false,
+  "historical_files_sha256_verified": 15,
+  "current_input": "data\\processed\\1st_test.csv",
+  "current_input_sha256": "4aa40f7807b600d925a1b5999de2f2f254595e6a8904f6c84d7cb106ba955cc7",
+  "historical_input_compatibility_verified": true,
+  "training_only_preprocessing_verified": true,
+  "prediction_rows": 676,
+  "max_absolute_saved_prediction_difference": 7.592773442866019e-06,
+  "measured_bilstm": {
+    "MAE_hours": 57.49865536159939,
+    "RMSE_hours": 66.88139692870871
+  },
+  "measured_last_train_target": {
+    "MAE_hours": 38.209533201840905,
+    "RMSE_hours": 45.070096915963234
+  },
+  "same_saved_source_paths": false,
+  "architecture": {
+    "input_features": 24,
+    "sequence_length": 16,
+    "hidden_size": 32,
+    "layers": 1,
+    "bidirectional": true,
+    "head": "Linear(64,16), ReLU, Dropout(0.1), Linear(16,1), Softplus",
+    "parameters": 15905,
+    "epochs": 20
+  },
+  "limitations": [
+    "정답 rul_calendar_hours_proxy는 시험 마지막 기록까지 남은 달력 시간의 대리값이다. 정확한 고장 시각이나 실제 잔여 수명·가동시간이 아니다.",
+    "학습·평가가 같은 1st Test와 같은 Bearing 3·4의 수명 궤적을 공유하는 회고적 내부 평가다. 독립 실험·다른 베어링·현장 일반화 성능을 검증하지 않았다.",
+    "학습 정답도 시험 종료 후 알려진 종료점을 이용해 생성되었다. 분할 시점에 해당 정답으로 학습한 모델을 실제 운용할 수 있었다는 뜻이 아니다.",
+    "측정 시각·측정 순번·종료 시각·RUL 파생 열·베어링 ID는 모델 특징에 넣지 않는다. 시각과 순번은 분할·순서·공백 검사에만 사용한다.",
+    "양방향 LSTM은 최종 입력 시점까지의 과거 관측만 양방향으로 처리한다. 예측 시점 이후의 신호나 정답은 입력에 없다.",
+    "학습·평가 시퀀스는 각 분할 안에서 독립적으로 만든다. 평가 초반의 입력을 채우려고 학습 구간을 끌어오지 않는다.",
+    "시퀀스 준비 구간과 긴 공백 뒤의 짧은 구간은 평가에서 제외된다. 기존 전체 평가와 대상이 달라지므로 공통 최종 시점에 맞춘 기준 모델 지표를 별도로 계산한다.",
+    "입력 간격은 일정하지 않다. 시퀀스는 관측 순서의 여러 시점이며 고정된 실제 시간 길이를 뜻하지 않는다. 공백 기준 기본값은 기존 전처리와 같은 20분이다.",
+    "겹치는 시퀀스와 두 베어링은 서로 독립인 수명 실험이 아니다. 시퀀스 수를 독립 실험 수로 해석하지 않는다.",
+    "매 epoch 평가 구간의 손실을 기록하지만 최종 모델은 사전에 정한 마지막 epoch다. 조기 종료·학습률 조정·체크포인트 선택에 평가 점수를 쓰지 않는다.",
+    "스케일러·결측 중앙값·정답 크기 조정은 앞쪽 학습 구간에만 적합한다. 평가 구간으로 재학습하거나 하이퍼파라미터를 선택하지 않는다.",
+    "학습 구간과 평가 구간의 RUL 범위가 겹치지 않는다. BiLSTM이 수학적으로 외삽할 수 있어도 종료 직전의 작은 RUL을 정확히 예측한다는 보장은 없다.",
+    "단순 기준도 학습 정답만 사용하지만 그 정답 자체는 종료 후의 회고적 대리값이다. 실제 이용 가능한 잔여 수명 기준으로 오인하면 안 된다."
+  ]
+}

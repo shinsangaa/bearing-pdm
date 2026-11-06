@@ -1,0 +1,77 @@
+[
+  {
+    "path": "src/train_bilstm_rul.py",
+    "commit": "80c2ff1e59c4cfc1d92f10c5fd1ca5fd0ef8ec98",
+    "sha256": "78a1aac68209aa2448c09a8954d123e0363fc7eb2a0501a5874e675725020d8d"
+  },
+  {
+    "path": "models/bilstm_rul.pt",
+    "commit": "80c2ff1e59c4cfc1d92f10c5fd1ca5fd0ef8ec98",
+    "sha256": "881fdd180945c9dbb70b8ae106009c9df6a59eed31f3dcead9e2b241358b511b"
+  },
+  {
+    "path": "reports/bilstm_rul/evaluation.json",
+    "commit": "e94d9ad433a84a74ad1bb5049a45f4ae5c7d2871",
+    "sha256": "aa30fb73675f2298cfe0f4c5dbf9bc07f3ddd79f8f46c29532295126fa60fad5"
+  },
+  {
+    "path": "reports/bilstm_rul/evaluation.md",
+    "commit": "e94d9ad433a84a74ad1bb5049a45f4ae5c7d2871",
+    "sha256": "b84bff5219524ee966ab08e7a55a7071d439f91f0c54373900ad9e3d54d06158"
+  },
+  {
+    "path": "reports/bilstm_rul/loss_curve.png",
+    "commit": "e94d9ad433a84a74ad1bb5049a45f4ae5c7d2871",
+    "sha256": "868fb69b2f5f28132e68b394db181414160f7ee05c824d0c6d5bf552195e0db4"
+  },
+  {
+    "path": "reports/bilstm_rul/metrics.csv",
+    "commit": "e94d9ad433a84a74ad1bb5049a45f4ae5c7d2871",
+    "sha256": "b9761e8512e332470b6deccc90d4b11126691f5215b9bf1f98605879a12dea4b"
+  },
+  {
+    "path": "reports/bilstm_rul/preserved_files_sha256.json",
+    "commit": "e94d9ad433a84a74ad1bb5049a45f4ae5c7d2871",
+    "sha256": "91497777f456724e54bc39cf18f113830b46ffc82a0b7435cdecee3d70fbd75c"
+  },
+  {
+    "path": "reports/bilstm_rul/rul_predictions.png",
+    "commit": "e94d9ad433a84a74ad1bb5049a45f4ae5c7d2871",
+    "sha256": "44237167973174feecef38fd627fd7d98955bd16f6f6a04e46f2e789ee3c69f6"
+  },
+  {
+    "path": "reports/bilstm_rul/sequence_manifest.csv",
+    "commit": "e94d9ad433a84a74ad1bb5049a45f4ae5c7d2871",
+    "sha256": "8bcc569e9903723d789286543f1cafaf4e8d3d871ed73f4d02dc3fbba6de64e9"
+  },
+  {
+    "path": "reports/bilstm_rul/split_assignments.csv",
+    "commit": "e94d9ad433a84a74ad1bb5049a45f4ae5c7d2871",
+    "sha256": "77f628955b3bd2e18dcb83411eb5fa5b24c8a70bab6618e7d8dfae3e5d6f3c60"
+  },
+  {
+    "path": "reports/bilstm_rul/test_predictions.csv",
+    "commit": "e94d9ad433a84a74ad1bb5049a45f4ae5c7d2871",
+    "sha256": "af0fe13b597c88ef8a02b4aa52ea3d47658ce688ad53daab9d24b85e842a13bd"
+  },
+  {
+    "path": "reports/bilstm_rul/training_history.csv",
+    "commit": "e94d9ad433a84a74ad1bb5049a45f4ae5c7d2871",
+    "sha256": "8bc7dc1c52bd163d9b1a5e940973f0de9dfc9f70820f96483334447da11068a9"
+  },
+  {
+    "path": "reports/bilstm_rul/verification.json",
+    "commit": "e94d9ad433a84a74ad1bb5049a45f4ae5c7d2871",
+    "sha256": "5bb0ca8cfd41f795f2069fd3f88baf36ee2587a57cd6eb5643d23f76fa7c6913"
+  },
+  {
+    "path": "reports/evaluation/rul_baseline.json",
+    "commit": "80c2ff1e59c4cfc1d92f10c5fd1ca5fd0ef8ec98",
+    "sha256": "eac5d24a71f811b37e02bced9b59ab0a6b60c8ed3c8e453942596101f7601eb3"
+  },
+  {
+    "path": "reports/predictions/rul_baseline.csv",
+    "commit": "80c2ff1e59c4cfc1d92f10c5fd1ca5fd0ef8ec98",
+    "sha256": "67410d6c12b6d0d222932d49fd5afce2073f3627dcd45f63cc74302d8f8bf887"
+  }
+]

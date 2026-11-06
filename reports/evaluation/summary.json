@@ -1,0 +1,573 @@
+{
+  "dataset": "NASA IMS",
+  "experiments": {
+    "1st_test": {
+      "feature_csv": "data/processed/1st_test.csv",
+      "measurements": 2156,
+      "feature_rows": 17248,
+      "channel_mapping": {
+        "1": [
+          1,
+          2
+        ],
+        "2": [
+          3,
+          4
+        ],
+        "3": [
+          5,
+          6
+        ],
+        "4": [
+          7,
+          8
+        ]
+      },
+      "reported_end_defects": {
+        "3": "inner_race",
+        "4": "rolling_element"
+      },
+      "release_note": "동봉 IMS 설명서의 채널·종료 시 결함 명세 사용",
+      "quality_review": null,
+      "rul_endpoint": null,
+      "rul_policy": "보고된 결함 베어링만 시험 종료 기준 대리값; 실제 고장 시각/가동시간 아님. 그 외 라벨은 결측.",
+      "signal_analysis": {
+        "experiment": "1st_test",
+        "status": "PASS",
+        "signal_source": "data/raw/1st_test/1st_test/2003.11.25.23.39.56",
+        "source_sha256": "d025a56984f34baaa3d9dd9d944e582f22d1bb0744dfe5bcc8d5ad9cc97ca0d0",
+        "signal_at": "2003-11-25 23:39:56",
+        "figures": [
+          "reports\\figures\\ims_1st_test_bearing1_sensor1_signal.png",
+          "reports\\figures\\ims_1st_test_bearing1_sensor2_signal.png",
+          "reports\\figures\\ims_1st_test_bearing1_degradation.png",
+          "reports\\figures\\ims_1st_test_bearing2_sensor1_signal.png",
+          "reports\\figures\\ims_1st_test_bearing2_sensor2_signal.png",
+          "reports\\figures\\ims_1st_test_bearing2_degradation.png",
+          "reports\\figures\\ims_1st_test_bearing3_sensor1_signal.png",
+          "reports\\figures\\ims_1st_test_bearing3_sensor2_signal.png",
+          "reports\\figures\\ims_1st_test_bearing3_degradation.png",
+          "reports\\figures\\ims_1st_test_bearing4_sensor1_signal.png",
+          "reports\\figures\\ims_1st_test_bearing4_sensor2_signal.png",
+          "reports\\figures\\ims_1st_test_bearing4_degradation.png"
+        ]
+      },
+      "figures": [
+        "figures/ims_1st_test_bearing1_degradation.png",
+        "figures/ims_1st_test_bearing1_sensor1_signal.png",
+        "figures/ims_1st_test_bearing1_sensor2_signal.png",
+        "figures/ims_1st_test_bearing2_degradation.png",
+        "figures/ims_1st_test_bearing2_sensor1_signal.png",
+        "figures/ims_1st_test_bearing2_sensor2_signal.png",
+        "figures/ims_1st_test_bearing3_degradation.png",
+        "figures/ims_1st_test_bearing3_sensor1_signal.png",
+        "figures/ims_1st_test_bearing3_sensor2_signal.png",
+        "figures/ims_1st_test_bearing4_degradation.png",
+        "figures/ims_1st_test_bearing4_sensor1_signal.png",
+        "figures/ims_1st_test_bearing4_sensor2_signal.png",
+        "figures/ims_1st_test_nasa_rul_timeline.png"
+      ]
+    },
+    "2nd_test": {
+      "feature_csv": "data/processed/2nd_test.csv",
+      "measurements": 984,
+      "feature_rows": 3936,
+      "channel_mapping": {
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ],
+        "3": [
+          3
+        ],
+        "4": [
+          4
+        ]
+      },
+      "reported_end_defects": {
+        "1": "outer_race"
+      },
+      "release_note": "동봉 IMS 설명서의 채널·종료 시 결함 명세 사용",
+      "quality_review": {
+        "flag": "suspected_stop_or_measurement_change",
+        "interpretation": "정지 또는 측정 상태 변화 의심; 원인 미확정. 원본·특징 행 유지, 상태 판단 보류.",
+        "marked_measurements": [
+          "2004.02.19.06.12.39",
+          "2004.02.19.06.22.39"
+        ]
+      },
+      "rul_endpoint": {
+        "at": "2004-02-19 06:22:39",
+        "last_measurement_included": true,
+        "exact_failure_time_known": false
+      },
+      "rul_policy": "보고된 결함 베어링만 마지막 기록까지의 달력 시간 대리값; 품질 의심 마지막 기록도 포함. 실제 고장 시각/가동시간 아님. 그 외 라벨은 결측.",
+      "signal_analysis": {
+        "experiment": "2nd_test",
+        "status": "PASS",
+        "signal_source": "data/raw/2nd_test/2nd_test/2004.02.19.06.22.39",
+        "source_sha256": "b63bbae7f6e9e7a97b14584fe2645aae13cab7f8f6010643929f3e08c2216a24",
+        "signal_at": "2004-02-19 06:22:39",
+        "figures": [
+          "reports\\figures\\ims_2nd_test_bearing1_sensor1_signal.png",
+          "reports\\figures\\ims_2nd_test_bearing1_degradation.png",
+          "reports\\figures\\ims_2nd_test_bearing2_sensor1_signal.png",
+          "reports\\figures\\ims_2nd_test_bearing2_degradation.png",
+          "reports\\figures\\ims_2nd_test_bearing3_sensor1_signal.png",
+          "reports\\figures\\ims_2nd_test_bearing3_degradation.png",
+          "reports\\figures\\ims_2nd_test_bearing4_sensor1_signal.png",
+          "reports\\figures\\ims_2nd_test_bearing4_degradation.png"
+        ]
+      },
+      "figures": [
+        "figures/ims_2nd_test_bearing1_degradation.png",
+        "figures/ims_2nd_test_bearing1_sensor1_signal.png",
+        "figures/ims_2nd_test_bearing2_degradation.png",
+        "figures/ims_2nd_test_bearing2_sensor1_signal.png",
+        "figures/ims_2nd_test_bearing3_degradation.png",
+        "figures/ims_2nd_test_bearing3_sensor1_signal.png",
+        "figures/ims_2nd_test_bearing4_degradation.png",
+        "figures/ims_2nd_test_bearing4_sensor1_signal.png"
+      ]
+    },
+    "3rd_test": {
+      "feature_csv": "data/processed/3rd_test.csv",
+      "measurements": 6324,
+      "feature_rows": 25296,
+      "channel_mapping": {
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ],
+        "3": [
+          3
+        ],
+        "4": [
+          4
+        ]
+      },
+      "reported_end_defects": {
+        "3": "outer_race"
+      },
+      "release_note": "3rd_test는 전체 배포본·PHM 2021·Sensors 2024 기준 6,324개를 사용합니다. README의 4,448개 명세와 다릅니다. B3 RUL은 4월 18일 마지막 기록까지의 대리값이며 실제 고장 시각은 아닙니다.",
+      "quality_review": {
+        "flag": "suspected_stop_or_measurement_change",
+        "interpretation": "정지 또는 측정 상태 변화 의심; 원인 미확정. 원본·특징 행 유지, 상태 판단 보류.",
+        "marked_measurements": [
+          "2004.04.18.02.42.55"
+        ]
+      },
+      "rul_endpoint": {
+        "at": "2004-04-18 02:42:55",
+        "last_measurement_included": true,
+        "exact_failure_time_known": false
+      },
+      "rul_policy": "보고된 결함 베어링만 마지막 기록까지의 달력 시간 대리값; 품질 의심 마지막 기록도 포함. 실제 고장 시각/가동시간 아님. 그 외 라벨은 결측.",
+      "signal_analysis": {
+        "experiment": "3rd_test",
+        "status": "PASS",
+        "signal_source": "data/raw/3rd_test/2004.04.18.02.42.55",
+        "source_sha256": "5057c5bcccec00c297458929742be38c9213981c3c00c070781ce364e49c275c",
+        "signal_at": "2004-04-18 02:42:55",
+        "figures": [
+          "reports\\figures\\ims_3rd_test_bearing1_sensor1_signal.png",
+          "reports\\figures\\ims_3rd_test_bearing1_degradation.png",
+          "reports\\figures\\ims_3rd_test_bearing2_sensor1_signal.png",
+          "reports\\figures\\ims_3rd_test_bearing2_degradation.png",
+          "reports\\figures\\ims_3rd_test_bearing3_sensor1_signal.png",
+          "reports\\figures\\ims_3rd_test_bearing3_degradation.png",
+          "reports\\figures\\ims_3rd_test_bearing4_sensor1_signal.png",
+          "reports\\figures\\ims_3rd_test_bearing4_degradation.png"
+        ]
+      },
+      "figures": [
+        "figures/ims_3rd_test_bearing1_degradation.png",
+        "figures/ims_3rd_test_bearing1_sensor1_signal.png",
+        "figures/ims_3rd_test_bearing2_degradation.png",
+        "figures/ims_3rd_test_bearing2_sensor1_signal.png",
+        "figures/ims_3rd_test_bearing3_degradation.png",
+        "figures/ims_3rd_test_bearing3_sensor1_signal.png",
+        "figures/ims_3rd_test_bearing4_degradation.png",
+        "figures/ims_3rd_test_bearing4_sensor1_signal.png"
+      ]
+    }
+  },
+  "models": {
+    "rf_basic": {
+      "evaluation": "evaluation/rf_basic_metrics.json",
+      "predictions": "predictions/rf_basic_predictions.csv",
+      "model": "models/rf_basic.joblib",
+      "evaluation_protocol": "1st Test 내부 시간순 평가. 다른 시험의 일반화 성능 아님.",
+      "evaluation_rows": 864,
+      "metrics": {
+        "overall": {
+          "random_forest": {
+            "MAE_hours": 90.42975934133936,
+            "RMSE_hours": 104.08575690888495
+          },
+          "train_median": {
+            "MAE_hours": 315.5389525462963,
+            "RMSE_hours": 316.55843996875285
+          },
+          "last_train_target": {
+            "MAE_hours": 40.60617476851852,
+            "RMSE_hours": 47.88816942385812
+          }
+        },
+        "bearing_3": {
+          "random_forest": {
+            "MAE_hours": 101.69019827270733,
+            "RMSE_hours": 114.39123610713195
+          },
+          "train_median": {
+            "MAE_hours": 315.5389525462963,
+            "RMSE_hours": 316.55843996875285
+          },
+          "last_train_target": {
+            "MAE_hours": 40.60617476851853,
+            "RMSE_hours": 47.88816942385812
+          }
+        },
+        "bearing_4": {
+          "random_forest": {
+            "MAE_hours": 79.16932040997138,
+            "RMSE_hours": 92.6408909956795
+          },
+          "train_median": {
+            "MAE_hours": 315.5389525462963,
+            "RMSE_hours": 316.55843996875285
+          },
+          "last_train_target": {
+            "MAE_hours": 40.60617476851853,
+            "RMSE_hours": 47.88816942385812
+          }
+        }
+      },
+      "model_sha256": "c108d92cb52f5a5dbec211f49b788f7019bd4e945f645cfb65b7f9a338c1f020",
+      "experiment_holdout": {
+        "evaluation": "evaluation/rf_basic_holdout_metrics.json",
+        "predictions": "predictions/rf_basic_holdout_test_predictions.csv",
+        "model": "models/rf_basic_holdout.joblib"
+      }
+    },
+    "rf_engineered": {
+      "evaluation": "evaluation/rf_engineered_feature_comparison.csv",
+      "metrics": [
+        {
+          "model": "기존 RF",
+          "MAE": 500.604804990643,
+          "RMSE": 548.9558910381919,
+          "R2": -133.45250514791167
+        },
+        {
+          "model": "특징 추가 RF",
+          "MAE": 613.0789079215862,
+          "RMSE": 656.504418793091,
+          "R2": -191.2955816583204
+        }
+      ],
+      "evaluation_protocol": "1st Train → 2nd Validation, 기존 특징 6개와 이동 통계 추가 특징 11개 비교",
+      "artifact_status": "성능 비교표만 저장됨. 가중치와 개별 예측 파일은 생성되지 않았음."
+    },
+    "ridge": {
+      "evaluation": "evaluation/ridge_validation_alpha.csv",
+      "predictions": "predictions/ridge_test3_predictions.csv",
+      "model": "models/ridge_all_tests.joblib",
+      "evaluation_protocol": "2nd로 alpha 선택, 1st+2nd 학습 → 3rd 탐색적 평가. 최종 가중치는 세 시험 모두 학습."
+    }
+  },
+  "dataset_provenance": {
+    "source_readme": "reports/evaluation/ims_data_readme.pdf",
+    "active_readme": "reports/evaluation/ims_data_readme.pdf",
+    "readme_sha256": "cf46d37c21f7f292c11bbbdd4695d876c417ed1d6425e3d87c962ae2182ae6ed",
+    "source_root": "data/raw",
+    "sampling_hz": 20000,
+    "samples_per_file": 20480,
+    "raw_data_written": false,
+    "active_experiments": [
+      "1st_test",
+      "2nd_test",
+      "3rd_test"
+    ],
+    "active_measurements": 9464,
+    "third_file_count": 6324,
+    "third_readme_file_count": 4448,
+    "third_readme_discrepancy": true,
+    "third_range_basis": "전체 배포본과 PHM 2021 표 1 / Sensors 2024 표 3; 실제 고장 시각 확정 아님",
+    "references": [
+      "https://papers.phmsociety.org/index.php/phme/article/download/2947/1761",
+      "https://www.mdpi.com/1424-8220/24/23/7769",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11644926/"
+    ],
+    "data_layout": "data/processed/{experiment}.csv",
+    "preprocessing_record": "reports/evaluation/preprocessing.json",
+    "raw_copy_verified": true
+  },
+  "note": "모델 평가 JSON의 절대 경로와 코드 해시는 당시 실험 출처다. 현재 실행 경로는 이 요약과 코드에서 지정한다.",
+  "preserved_assets": [
+    {
+      "path": "data/processed/1st_test.csv",
+      "sha256": "4aa40f7807b600d925a1b5999de2f2f254595e6a8904f6c84d7cb106ba955cc7"
+    },
+    {
+      "path": "data/processed/2nd_test.csv",
+      "sha256": "4f134376ed4cab7c823bf73ea7dc700b03db45404e664aa953b1a8b362e4502a"
+    },
+    {
+      "path": "data/processed/3rd_test.csv",
+      "sha256": "a247591399a60b00ce45bcb8f8d2f6f36b0d787be30d71185ffac5124c952273"
+    },
+    {
+      "path": "data/processed/features_enhanced.csv",
+      "sha256": "85e34601d1827b7fbb40e333106c5248da45daa82b949f5beff307733ee8627f"
+    },
+    {
+      "path": "models/rf_basic.joblib",
+      "sha256": "c108d92cb52f5a5dbec211f49b788f7019bd4e945f645cfb65b7f9a338c1f020"
+    },
+    {
+      "path": "models/rf_basic_holdout.joblib",
+      "sha256": "0f750e974a30dc3201714b6bab22bbe953280fccd638884d765b7ab51f02b8a9"
+    },
+    {
+      "path": "models/ridge_all_tests.joblib",
+      "sha256": "f4f8f814ea8771edfddaba038d36b518406da7644a5e0b2270005eed5b7ab974"
+    },
+    {
+      "path": "reports/evaluation/ims_alarm_analysis.md",
+      "sha256": "8b8415a55c37a2714797ad32d9b84984bed342c3725af3649476a7bc316b99a3"
+    },
+    {
+      "path": "reports/evaluation/ims_alarm_analysis_metadata.json",
+      "sha256": "04cea6d43e3642d0873ed0f449ccf87ea269525edc936f7852a4b9b2e1cb1768"
+    },
+    {
+      "path": "reports/evaluation/ims_alarm_baseline_checks.csv",
+      "sha256": "f9343e7aa0ffd1de9394f72d53f4b38a39e30e15eaf37ccf1ac2c76bde385835"
+    },
+    {
+      "path": "reports/evaluation/ims_alarm_comparison.csv",
+      "sha256": "5f907a59d0549174147bf7e0522d8dd72731b0da275a00cda0f812e3073d72f8"
+    },
+    {
+      "path": "reports/evaluation/ims_alarm_replay_ui_fix.md",
+      "sha256": "a0394a1bf949f9ffb37bed8a5ab0f10201aea71d595392390f4887acf0c77fd3"
+    },
+    {
+      "path": "reports/evaluation/ims_alarm_summary.csv",
+      "sha256": "90f340aab6d75f95f31d3e1e04a176ba9a29ec961106c60f2202cfcc129ed799"
+    },
+    {
+      "path": "reports/evaluation/ims_data_audit.json",
+      "sha256": "7605dbb8b5746a4f2452213fc108f98bb49422ee7da65c3af9763e22edcc68b4"
+    },
+    {
+      "path": "reports/evaluation/ims_data_readme.pdf",
+      "sha256": "cf46d37c21f7f292c11bbbdd4695d876c417ed1d6425e3d87c962ae2182ae6ed"
+    },
+    {
+      "path": "reports/evaluation/preprocessing.json",
+      "sha256": "22164b28124bc073de0db7a5ce6a69b63e144490b574d4f80e814800bef4f709"
+    },
+    {
+      "path": "reports/evaluation/project_structure_report.md",
+      "sha256": "3ed89d5228afc1796889589382acad888762d511cd9f3d8fe216f9eb03f148f0"
+    },
+    {
+      "path": "reports/evaluation/project_structure_server_check.json",
+      "sha256": "76c4ec0888d1c4984527f689e68f634e553aeedeea800b1373bcdc485f16b475"
+    },
+    {
+      "path": "reports/evaluation/rf_basic_feature_importance.csv",
+      "sha256": "2560efba73db2bcea346744c7cd43ba192fcacdf5d7895c891c57101b7fe3272"
+    },
+    {
+      "path": "reports/evaluation/rf_basic_holdout_metrics.json",
+      "sha256": "5aa481e0ef51d38d2f9b67d47e140471ad3453e993617417132a122f23958468"
+    },
+    {
+      "path": "reports/evaluation/rf_basic_holdout_split_assignments.csv",
+      "sha256": "1cfa33959561b40e56e7f854a2bdc8c15520275c80a6d6950cea145645e81180"
+    },
+    {
+      "path": "reports/evaluation/rf_basic_holdout_split_audit.json",
+      "sha256": "6570d2568f38599322642fab9588e5cd91d339b12eb8057dfbb9670ca0f2fb8b"
+    },
+    {
+      "path": "reports/evaluation/rf_basic_metrics.json",
+      "sha256": "dfbe40946f8efd2b6518000a8ef7292ef154bc3a21865719f1ca0daf6ab29951"
+    },
+    {
+      "path": "reports/evaluation/rf_basic_protocol_comparison.csv",
+      "sha256": "676b683b29b3f056f838cbe9416f1514474ca9604ab290ac33dbbc9dd140e685"
+    },
+    {
+      "path": "reports/evaluation/rf_basic_split_assignments.csv",
+      "sha256": "0ecb92be9801ddd11faefb2803f54310ba3c0e982ff93db0563d9404111dba9c"
+    },
+    {
+      "path": "reports/evaluation/rf_engineered_feature_comparison.csv",
+      "sha256": "8766d70596ed5e78bb6eb589b17f350e4180ab4acfd90c824b56c02b6eb964a6"
+    },
+    {
+      "path": "reports/evaluation/ridge_leave_one_test_out.csv",
+      "sha256": "7d7df34272bb739b2aedae190e95ff7e729e8d83aebacf35f931435a04adfec0"
+    },
+    {
+      "path": "reports/evaluation/ridge_validation_alpha.csv",
+      "sha256": "9ef93889e724d6ecdba7fb04e5c86320381b25fd25a079a358fdd6cb6da9f37e"
+    },
+    {
+      "path": "reports/figures/ims_1st_test_bearing1_degradation.png",
+      "sha256": "445c807ccde8aad1f29124d369f170f2264ddc136887aac12325b3df5fce1ad8"
+    },
+    {
+      "path": "reports/figures/ims_1st_test_bearing1_sensor1_signal.png",
+      "sha256": "088d18c1a72a8e6310906fe5f06baf35709b63bb7c49fc5a1fdd60dc5a04a8a5"
+    },
+    {
+      "path": "reports/figures/ims_1st_test_bearing1_sensor2_signal.png",
+      "sha256": "0c57ea53b00f101f575f1d30952e57ae8b79e2ca05113fdfb83c2e7ebc199512"
+    },
+    {
+      "path": "reports/figures/ims_1st_test_bearing2_degradation.png",
+      "sha256": "9b17d79cf3d86a62b9f60c787544f41abfc522e0ac798911eefb1994d6e8c14b"
+    },
+    {
+      "path": "reports/figures/ims_1st_test_bearing2_sensor1_signal.png",
+      "sha256": "ccc78871224392d8ce78f67022940d5c8c45838d5d33d27b5f93e8e40b45320f"
+    },
+    {
+      "path": "reports/figures/ims_1st_test_bearing2_sensor2_signal.png",
+      "sha256": "417b96df81f293f24331d838ca27b8269f38a0cf72d5182ca91a3b320d77af82"
+    },
+    {
+      "path": "reports/figures/ims_1st_test_bearing3_degradation.png",
+      "sha256": "7d8e445c45eade1077a8ff6fd5cc1b081e864feb08eb04971b7879b710cfad5a"
+    },
+    {
+      "path": "reports/figures/ims_1st_test_bearing3_sensor1_signal.png",
+      "sha256": "698a6325e08855076cdc421897a3b93b19c578ae95f879528153fb875644767c"
+    },
+    {
+      "path": "reports/figures/ims_1st_test_bearing3_sensor2_signal.png",
+      "sha256": "1c704d1961ffab24ad54f04dc8974617d0f97ef08be5912d0bc345cbd0a8cdcb"
+    },
+    {
+      "path": "reports/figures/ims_1st_test_bearing4_degradation.png",
+      "sha256": "64a72520e9098c0cbce5c14788624494256972e48cb32ebde476e567bfb1f6e1"
+    },
+    {
+      "path": "reports/figures/ims_1st_test_bearing4_sensor1_signal.png",
+      "sha256": "fc7aca7cc6def1b7572e76d4086a96100b946aa261e59d35b6d34e350696482c"
+    },
+    {
+      "path": "reports/figures/ims_1st_test_bearing4_sensor2_signal.png",
+      "sha256": "6f5e1af63a5cec6248dffcd447a0d3039b0183e0b3ff350f8045a650bbd4f75a"
+    },
+    {
+      "path": "reports/figures/ims_1st_test_nasa_rul_timeline.png",
+      "sha256": "af805b2fda3bd4b2ce7264d0e23b3f4ecab4c9d772d7bae9b0a1fbaa06ff1d82"
+    },
+    {
+      "path": "reports/figures/ims_2nd_test_bearing1_degradation.png",
+      "sha256": "32c43409fe6fe2a322b792ebc47a40d0bdbcc777c93d8c6c88a34222b238f23c"
+    },
+    {
+      "path": "reports/figures/ims_2nd_test_bearing1_sensor1_signal.png",
+      "sha256": "8016027c58613d7f0fe77af6a1e0e13882f6b102d63c45834e26a2d677ff1c6d"
+    },
+    {
+      "path": "reports/figures/ims_2nd_test_bearing2_degradation.png",
+      "sha256": "a1145a08ea26d4311e0e45093a58001399e320f57fa0bc1aedc4840cfde96107"
+    },
+    {
+      "path": "reports/figures/ims_2nd_test_bearing2_sensor1_signal.png",
+      "sha256": "f984f1faa6f220e613faf7e5596fc44cc5b1883b708f40c75d48297e3ae7ebf6"
+    },
+    {
+      "path": "reports/figures/ims_2nd_test_bearing3_degradation.png",
+      "sha256": "fc0a577d7ec15a3a8c0792f929644596dc87c41027e84cc0b8e3725ae6fbfd59"
+    },
+    {
+      "path": "reports/figures/ims_2nd_test_bearing3_sensor1_signal.png",
+      "sha256": "89fd5284e2fd21135675b5f3ccbbb11efb5e2ab6fa11bdf45d3ad8c511b773d6"
+    },
+    {
+      "path": "reports/figures/ims_2nd_test_bearing4_degradation.png",
+      "sha256": "73772dd7196d11d0d8ab886f6fe9d809e774fad78c666a08b8e14f2872a38a28"
+    },
+    {
+      "path": "reports/figures/ims_2nd_test_bearing4_sensor1_signal.png",
+      "sha256": "de6e4bcaf3b4c0e06f9ed5aeb8f68e73d2557b70c707ffe8800329053ffc1fc3"
+    },
+    {
+      "path": "reports/figures/ims_3rd_test_bearing1_degradation.png",
+      "sha256": "56b5075723df1bcbb711f15e06d2a2dcc66f014202003c77ba24a65a8fab13d7"
+    },
+    {
+      "path": "reports/figures/ims_3rd_test_bearing1_sensor1_signal.png",
+      "sha256": "7420bd5a0b64d0258b2a10bba376bbf76971a22dbe106fb3032b9722d77f546d"
+    },
+    {
+      "path": "reports/figures/ims_3rd_test_bearing2_degradation.png",
+      "sha256": "08d5f5750d1e7b38753390a599298021b4fbff74dda109dd267c37f3877cc974"
+    },
+    {
+      "path": "reports/figures/ims_3rd_test_bearing2_sensor1_signal.png",
+      "sha256": "a213ca2f38b9957fcaa66095bf96c0f1283d8a75e008122dd73f52006592af51"
+    },
+    {
+      "path": "reports/figures/ims_3rd_test_bearing3_degradation.png",
+      "sha256": "b4d8dd0d985eb0dee42415100660d7a1ee181f1adb79228fb0a95052e34e829d"
+    },
+    {
+      "path": "reports/figures/ims_3rd_test_bearing3_sensor1_signal.png",
+      "sha256": "e2ee77efb4836b2602b2089c9ccbc752f98f22529e9ffc65a7b0f051764a328c"
+    },
+    {
+      "path": "reports/figures/ims_3rd_test_bearing4_degradation.png",
+      "sha256": "0003be17827a33c4f7a2c672161eebfcd8cada005d726f2cfc17277830866008"
+    },
+    {
+      "path": "reports/figures/ims_3rd_test_bearing4_sensor1_signal.png",
+      "sha256": "d381889bfc1264ab4dfb94f5b1a9a63110f2a39d96e5f769dfc70c3b8a6701d3"
+    },
+    {
+      "path": "reports/figures/ims_alarm_rms_all_combinations.html",
+      "sha256": "b172806456019f4fe41182e8c4acbc450d587120728c19dd12d4b3132bf33b45"
+    },
+    {
+      "path": "reports/figures/rf_basic_holdout_test.png",
+      "sha256": "f5005b7a03460eda78408a2ce2ee86f0c941142935601df1d0ed9c5a77993026"
+    },
+    {
+      "path": "reports/figures/rf_basic_predictions.png",
+      "sha256": "0646bb0f51ebf4b919d43dbdec24f55662b6e197068791130775a34a16d4432e"
+    },
+    {
+      "path": "reports/figures/rf_basic_time_split.png",
+      "sha256": "fb18fd3d9f2b07559351eba7e8ac27aaf57ff4018eb8491d540b9e0687392a0a"
+    },
+    {
+      "path": "reports/predictions/rf_basic_holdout_test_predictions.csv",
+      "sha256": "a04c6530441d9931184668e5fc810b0eb0c606c4f1343b48f08229538bfa16fc"
+    },
+    {
+      "path": "reports/predictions/rf_basic_holdout_validation_predictions.csv",
+      "sha256": "68dac0fe6c31799647165310647b60b1b8397409c8eb8d114f36d5ba98bfad2c"
+    },
+    {
+      "path": "reports/predictions/rf_basic_predictions.csv",
+      "sha256": "fcce8db8dad3c808c167293039ec329c606c995242455a56af631e3f435b7397"
+    },
+    {
+      "path": "reports/predictions/ridge_test3_predictions.csv",
+      "sha256": "37d3c23aa3e4ef18953fb7b38e4516eb914aedeb8bae1bf7514b71a7b2d68e61"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+# Environments and generated caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.cache/
+*.tmp
+*.log
+
+# Raw data and large intermediate arrays
+data/*
+data/raw/
+!data/processed/
+data/processed/*
+!data/processed/1st_test.csv
+!data/processed/2nd_test.csv
+!data/processed/3rd_test.csv
+!data/demo_fft/
+!data/demo_fft/*.json
+!data/demo_fft/*.npz
+datasets/
+*.zip
+*.7z
+*.rar
+*.tar
+*.npy
+*.npz
+!data/demo_fft/*.npz
+*.parquet
+*.h5
+reports/**/cache/
+reports/*_smoke/
+reports/*_no_evaluation_check/
+
+# Presentation model artifacts (raw data and caches remain excluded)
+*.joblib
+*.pt
+*.pth
+*.pkl
+models/*
+!models/rf_basic.joblib
+!models/rf_basic_holdout.joblib
+!models/ridge_all_tests.joblib
+!models/bilstm_rul.pt
+!reports/ims_fault_types/rf_fault_types.joblib
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+.streamlit/secrets.toml

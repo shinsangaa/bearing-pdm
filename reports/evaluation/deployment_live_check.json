@@ -1,0 +1,9 @@
+{
+  "url": "http://localhost:8000",
+  "health": 200,
+  "docs": 200,
+  "available_model_count": 3,
+  "streamlit_live_http_prediction": "PASS",
+  "api_outage_keeps_stored_results_and_rms": "PASS",
+  "ridge_prediction_hours": 511.1275510944539
+}

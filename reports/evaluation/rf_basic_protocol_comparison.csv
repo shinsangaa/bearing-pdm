@@ -1,0 +1,4 @@
+﻿protocol,model,evaluation,rows,MAE_hours,RMSE_hours,R2,feature_schema,warning
+Train 1st / Validation 2nd / Test 3rd,RF (all Test),3rd_test B3,6324,322.13574412087854,395.7120865666993,-0.634663057030501,센서 특징 평균 12개,Different protocols/feature schemas/row subsets; not a like-for-like model ranking.
+Train 1st / Validation 2nd / Test 3rd,RF (matched),3rd_test B3,6249,322.2200570631532,395.48777721696183,-0.6400049006855419,센서 특징 평균 12개,Different protocols/feature schemas/row subsets; not a like-for-like model ranking.
+과거 1st 내부 시간순 80/20,RF Basic temporal,1st_test B3·B4,864,90.42975934133936,104.08575690888495,-15.811897691855599,두 센서 결합 24개,Different protocols/feature schemas/row subsets; not a like-for-like model ranking.

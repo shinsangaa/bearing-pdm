@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "reports_top_level": [
+    "evaluation",
+    "figures",
+    "predictions"
+  ],
+  "flat_reports": true,
+  "report_file_counts": {
+    "evaluation": 26,
+    "figures": 33,
+    "predictions": 4
+  },
+  "moves": 56,
+  "deleted_files": 22,
+  "moved_files_byte_identical": 52,
+  "updated_location_metadata_or_docs": [
+    "reports/evaluation/rf_basic_metrics.json",
+    "reports/evaluation/rf_basic_holdout_metrics.json",
+    "reports/evaluation/ims_alarm_analysis.md",
+    "reports/evaluation/ims_alarm_replay_ui_fix.md"
+  ],
+  "model_families": [
+    "rf_basic",
+    "rf_engineered",
+    "ridge"
+  ],
+  "model_retraining_performed": false,
+  "test_command": ".venv/Scripts/python.exe -m unittest discover -s tests -v",
+  "tests": {
+    "run": 40,
+    "passed": 40,
+    "failed": 0,
+    "duration_seconds": 19.458
+  },
+  "syntax_compile": "PASS",
+  "streamlit_server": {
+    "status": 200,
+    "health": "ok",
+    "page_status": 200
+  },
+  "app_testing": [
+    "All four menus",
+    "RF result tables and saved image",
+    "Ridge prediction curve",
+    "All sensors and alarms",
+    "Actual TXT FFT waterfall",
+    "No waterfall before confirmed alarm",
+    "Replay date/RMS/threshold traces"
+  ],
+  "reference_scan": {
+    "files_scanned": 23,
+    "stale_references": []
+  },
+  "protected_data_and_alarm": {
+    "processed_sha256_unchanged": true,
+    "raw_file_count": 9464,
+    "raw_size_and_mtime_unchanged": true,
+    "alarm_fft_ast_unchanged": {
+      "compute_fft_spectrum": true,
+      "prepare_alarm_frame": true,
+      "build_alarm_event_waterfall": true,
+      "replay_rms_figure": true
+    },
+    "shared_source_files_unchanged": true
+  },
+  "rf_metrics_and_model_hashes_preserved": true,
+  "csv_png_html_model_moves_byte_identical": true,
+  "changed_python_files": [
+    "app.py",
+    "app_copy5.py",
+    "app_copy6.py",
+    "app_copy7.py",
+    "src/analyze_ims_alarm.py",
+    "src/demo_support.py",
+    "src/train_rf_enhanced.py",
+    "src/train_ridge_ims.py",
+    "src/train_rul_baseline.py",
+    "tests/test_project.py"
+  ],
+  "remaining_notes": [
+    "RF engineered has saved metrics only; no weights or per-row prediction files were present. No model was retrained.",
+    "Six distinct historical UI variants app_copy2.py through app_copy7.py were retained; referenced result paths were updated.",
+    "Browser pixel-level visual inspection was not performed. Historical old names are retained only in migration/report audit records."
+  ],
+  "verification_scope": "Raw data checked by file inventory/size/mtime, not by rehashing every raw file. Processed data and all moved data/model/image files checked by SHA-256."
+}

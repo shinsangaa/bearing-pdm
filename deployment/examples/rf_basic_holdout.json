@@ -1,0 +1,17 @@
+{
+  "model": "rf_basic_holdout",
+  "features": {
+    "rms": 0.06818102627381022,
+    "std": 0.06817284566436105,
+    "peak": 0.305,
+    "kurtosis": 3.274401441737826,
+    "crest_factor": 4.473385290141298,
+    "fft_centroid_hz": 3437.0392244912773,
+    "fft_peak_1_hz": 985.3515625,
+    "fft_peak_1_amplitude": 0.022569128684957092,
+    "fft_peak_2_hz": 986.328125,
+    "fft_peak_2_amplitude": 0.022148324265416575,
+    "fft_peak_3_hz": 231.4453125,
+    "fft_peak_3_amplitude": 0.021452611281018323
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "input_sha256": {
+    "C:\\bearing-pdm\\data\\processed\\1st_test.csv": "4aa40f7807b600d925a1b5999de2f2f254595e6a8904f6c84d7cb106ba955cc7",
+    "C:\\bearing-pdm\\data\\processed\\2nd_test.csv": "4f134376ed4cab7c823bf73ea7dc700b03db45404e664aa953b1a8b362e4502a",
+    "C:\\bearing-pdm\\data\\processed\\3rd_test.csv": "a247591399a60b00ce45bcb8f8d2f6f36b0d787be30d71185ffac5124c952273"
+  },
+  "errors": [],
+  "series": 16,
+  "rows": 432,
+  "note": "No raw TXT read. End defect reports used only for review grouping, never detection."
+}

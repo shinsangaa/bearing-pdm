@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "existing_files_verified": 130,
+  "changed_existing_files": [],
+  "saved_checkpoint_loaded_weights_only_on_cpu": true,
+  "saved_predictions_reproduced": true,
+  "feature_imputation_mean_variance_fit_on_train_only_verified": true,
+  "target_scale_from_training_only_verified": true,
+  "same_baseline_80_20_split_verified": true,
+  "all_sequence_bearing_partition_future_and_gap_checks_passed": true,
+  "evaluation_endpoint_rows": 676,
+  "excluded_evaluation_endpoint_rows": 188,
+  "matched_reference_predictions_and_metrics_verified": true,
+  "epoch_20_checkpoint_verified": true,
+  "first_epoch_matches_smoke_run": true,
+  "cpu_forward_and_backward_verified": true,
+  "length_32_sequence_generation_verified": true,
+  "shuffled_input_order_verified": true,
+  "negative_cases_passed": [
+    "mixed_partition_sequence",
+    "missing_reference_prediction"
+  ],
+  "model_uses_only_24_signal_features": true
+}

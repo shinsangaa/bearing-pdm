@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: bearing-pdm-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: "10000"

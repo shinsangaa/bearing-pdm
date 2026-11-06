@@ -1,0 +1,693 @@
+{
+  "dataset": "NASA IMS only",
+  "input_files": [
+    {
+      "path": "data/processed/features_enhanced.csv",
+      "sha256": "85e34601d1827b7fbb40e333106c5248da45daa82b949f5beff307733ee8627f",
+      "rows": 37856
+    }
+  ],
+  "features": [
+    "rms",
+    "std",
+    "peak",
+    "kurtosis",
+    "crest_factor",
+    "fft_centroid_hz",
+    "fft_peak_1_hz",
+    "fft_peak_1_amplitude",
+    "fft_peak_2_hz",
+    "fft_peak_2_amplitude",
+    "fft_peak_3_hz",
+    "fft_peak_3_amplitude"
+  ],
+  "sensor_policy": "Sensor 1 only; other sensors excluded",
+  "proxy_fractions": {
+    "normal": 0.2,
+    "fault": 0.05
+  },
+  "train_fraction_within_each_region": 0.7,
+  "gap_measurements": 6,
+  "minimum_gap_seconds": 3600,
+  "split_audit": [
+    {
+      "test_id": "1st_test",
+      "bearing_id": 3,
+      "region": "early",
+      "label": "Normal proxy",
+      "candidate_rows": 432,
+      "train_rows": 302,
+      "test_rows": 124,
+      "gap_rows": 6,
+      "train_last_at": "2003-10-31T12:51:44",
+      "test_first_at": "2003-10-31T14:01:44",
+      "actual_gap_seconds": 4200.0
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 3,
+      "region": "late",
+      "label": "Inner Race",
+      "candidate_rows": 108,
+      "train_rows": 75,
+      "test_rows": 27,
+      "gap_rows": 6,
+      "train_last_at": "2003-11-25T11:17:32",
+      "test_first_at": "2003-11-25T12:27:32",
+      "actual_gap_seconds": 4200.0
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 4,
+      "region": "early",
+      "label": "Normal proxy",
+      "candidate_rows": 432,
+      "train_rows": 302,
+      "test_rows": 124,
+      "gap_rows": 6,
+      "train_last_at": "2003-10-31T12:51:44",
+      "test_first_at": "2003-10-31T14:01:44",
+      "actual_gap_seconds": 4200.0
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 4,
+      "region": "late",
+      "label": "Rolling Element",
+      "candidate_rows": 108,
+      "train_rows": 75,
+      "test_rows": 27,
+      "gap_rows": 6,
+      "train_last_at": "2003-11-25T11:17:32",
+      "test_first_at": "2003-11-25T12:27:32",
+      "actual_gap_seconds": 4200.0
+    },
+    {
+      "test_id": "2nd_test",
+      "bearing_id": 1,
+      "region": "early",
+      "label": "Normal proxy",
+      "candidate_rows": 197,
+      "train_rows": 137,
+      "test_rows": 54,
+      "gap_rows": 6,
+      "train_last_at": "2004-02-13T09:12:39",
+      "test_first_at": "2004-02-13T10:22:39",
+      "actual_gap_seconds": 4200.0
+    },
+    {
+      "test_id": "2nd_test",
+      "bearing_id": 1,
+      "region": "late",
+      "label": "Outer Race",
+      "candidate_rows": 50,
+      "train_rows": 35,
+      "test_rows": 9,
+      "gap_rows": 6,
+      "train_last_at": "2004-02-19T03:52:39",
+      "test_first_at": "2004-02-19T05:02:39",
+      "actual_gap_seconds": 4200.0
+    },
+    {
+      "test_id": "3rd_test",
+      "bearing_id": 3,
+      "region": "early",
+      "label": "Normal proxy",
+      "candidate_rows": 1265,
+      "train_rows": 885,
+      "test_rows": 374,
+      "gap_rows": 6,
+      "train_last_at": "2004-03-10T12:42:46",
+      "test_first_at": "2004-03-10T13:52:46",
+      "actual_gap_seconds": 4200.0
+    },
+    {
+      "test_id": "3rd_test",
+      "bearing_id": 3,
+      "region": "late",
+      "label": "Outer Race",
+      "candidate_rows": 317,
+      "train_rows": 221,
+      "test_rows": 90,
+      "gap_rows": 6,
+      "train_last_at": "2004-04-17T10:42:55",
+      "test_first_at": "2004-04-17T11:52:55",
+      "actual_gap_seconds": 4200.0
+    }
+  ],
+  "counts": [
+    {
+      "test_id": "1st_test",
+      "bearing_id": 3,
+      "label": "Inner Race",
+      "partition": "gap",
+      "rows": 6
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 3,
+      "label": "Inner Race",
+      "partition": "test",
+      "rows": 27
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 3,
+      "label": "Inner Race",
+      "partition": "train",
+      "rows": 75
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 3,
+      "label": "Normal proxy",
+      "partition": "gap",
+      "rows": 6
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 3,
+      "label": "Normal proxy",
+      "partition": "test",
+      "rows": 124
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 3,
+      "label": "Normal proxy",
+      "partition": "train",
+      "rows": 302
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 3,
+      "label": "unlabeled",
+      "partition": "excluded_middle",
+      "rows": 1616
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 4,
+      "label": "Normal proxy",
+      "partition": "gap",
+      "rows": 6
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 4,
+      "label": "Normal proxy",
+      "partition": "test",
+      "rows": 124
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 4,
+      "label": "Normal proxy",
+      "partition": "train",
+      "rows": 302
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 4,
+      "label": "Rolling Element",
+      "partition": "gap",
+      "rows": 6
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 4,
+      "label": "Rolling Element",
+      "partition": "test",
+      "rows": 27
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 4,
+      "label": "Rolling Element",
+      "partition": "train",
+      "rows": 75
+    },
+    {
+      "test_id": "1st_test",
+      "bearing_id": 4,
+      "label": "unlabeled",
+      "partition": "excluded_middle",
+      "rows": 1616
+    },
+    {
+      "test_id": "2nd_test",
+      "bearing_id": 1,
+      "label": "Normal proxy",
+      "partition": "gap",
+      "rows": 6
+    },
+    {
+      "test_id": "2nd_test",
+      "bearing_id": 1,
+      "label": "Normal proxy",
+      "partition": "test",
+      "rows": 54
+    },
+    {
+      "test_id": "2nd_test",
+      "bearing_id": 1,
+      "label": "Normal proxy",
+      "partition": "train",
+      "rows": 137
+    },
+    {
+      "test_id": "2nd_test",
+      "bearing_id": 1,
+      "label": "Outer Race",
+      "partition": "gap",
+      "rows": 6
+    },
+    {
+      "test_id": "2nd_test",
+      "bearing_id": 1,
+      "label": "Outer Race",
+      "partition": "test",
+      "rows": 9
+    },
+    {
+      "test_id": "2nd_test",
+      "bearing_id": 1,
+      "label": "Outer Race",
+      "partition": "train",
+      "rows": 35
+    },
+    {
+      "test_id": "2nd_test",
+      "bearing_id": 1,
+      "label": "unlabeled",
+      "partition": "excluded_middle",
+      "rows": 737
+    },
+    {
+      "test_id": "3rd_test",
+      "bearing_id": 3,
+      "label": "Normal proxy",
+      "partition": "gap",
+      "rows": 6
+    },
+    {
+      "test_id": "3rd_test",
+      "bearing_id": 3,
+      "label": "Normal proxy",
+      "partition": "test",
+      "rows": 374
+    },
+    {
+      "test_id": "3rd_test",
+      "bearing_id": 3,
+      "label": "Normal proxy",
+      "partition": "train",
+      "rows": 885
+    },
+    {
+      "test_id": "3rd_test",
+      "bearing_id": 3,
+      "label": "Outer Race",
+      "partition": "gap",
+      "rows": 6
+    },
+    {
+      "test_id": "3rd_test",
+      "bearing_id": 3,
+      "label": "Outer Race",
+      "partition": "test",
+      "rows": 90
+    },
+    {
+      "test_id": "3rd_test",
+      "bearing_id": 3,
+      "label": "Outer Race",
+      "partition": "train",
+      "rows": 221
+    },
+    {
+      "test_id": "3rd_test",
+      "bearing_id": 3,
+      "label": "unlabeled",
+      "partition": "excluded_middle",
+      "rows": 4742
+    }
+  ],
+  "train_rows": 2032,
+  "test_rows": 829,
+  "metrics": {
+    "accuracy": 0.9734620024125452,
+    "macro_f1": 0.8810626893299873,
+    "per_class": {
+      "Normal proxy": {
+        "precision": 0.9955817378497791,
+        "recall": 1.0,
+        "f1-score": 0.9977859778597786,
+        "support": 676.0
+      },
+      "Inner Race": {
+        "precision": 0.7428571428571429,
+        "recall": 0.9629629629629629,
+        "f1-score": 0.8387096774193549,
+        "support": 27.0
+      },
+      "Rolling Element": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.8,
+        "support": 27.0
+      },
+      "Outer Race": {
+        "precision": 0.8969072164948454,
+        "recall": 0.8787878787878788,
+        "f1-score": 0.8877551020408163,
+        "support": 99.0
+      },
+      "accuracy": 0.9734620024125452,
+      "macro avg": {
+        "precision": 0.9088365243004418,
+        "recall": 0.877104377104377,
+        "f1-score": 0.8810626893299873,
+        "support": 829.0
+      },
+      "weighted avg": {
+        "precision": 0.9757107503939485,
+        "recall": 0.9734620024125452,
+        "f1-score": 0.973023205579703,
+        "support": 829.0
+      }
+    }
+  },
+  "majority_baseline": {
+    "accuracy": 0.8154402895054282,
+    "macro_f1": 0.2245847176079734,
+    "per_class": {
+      "Normal proxy": {
+        "precision": 0.8154402895054282,
+        "recall": 1.0,
+        "f1-score": 0.8983388704318936,
+        "support": 676.0
+      },
+      "Inner Race": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 27.0
+      },
+      "Rolling Element": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 27.0
+      },
+      "Outer Race": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 99.0
+      },
+      "accuracy": 0.8154402895054282,
+      "macro avg": {
+        "precision": 0.20386007237635706,
+        "recall": 0.25,
+        "f1-score": 0.2245847176079734,
+        "support": 829.0
+      },
+      "weighted avg": {
+        "precision": 0.6649428657486967,
+        "recall": 0.8154402895054282,
+        "f1-score": 0.7325417085789627,
+        "support": 829.0
+      }
+    }
+  },
+  "per_case_metrics": {
+    "1st_test B3": {
+      "accuracy": 0.9933774834437086,
+      "macro_f1": 0.49528301886792453,
+      "per_class": {
+        "Normal proxy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 124.0
+        },
+        "Inner Race": {
+          "precision": 1.0,
+          "recall": 0.9629629629629629,
+          "f1-score": 0.9811320754716981,
+          "support": 27.0
+        },
+        "Rolling Element": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "Outer Race": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.9933774834437086,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.4907407407407407,
+          "f1-score": 0.49528301886792453,
+          "support": 151.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9933774834437086,
+          "f1-score": 0.9966262651505685,
+          "support": 151.0
+        }
+      }
+    },
+    "1st_test B4": {
+      "accuracy": 0.9403973509933775,
+      "macro_f1": 0.45,
+      "per_class": {
+        "Normal proxy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 124.0
+        },
+        "Inner Race": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "Rolling Element": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 27.0
+        },
+        "Outer Race": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.9403973509933775,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.41666666666666663,
+          "f1-score": 0.45,
+          "support": 151.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9403973509933775,
+          "f1-score": 0.9642384105960264,
+          "support": 151.0
+        }
+      }
+    },
+    "2nd_test B1": {
+      "accuracy": 0.9682539682539683,
+      "macro_f1": 0.4642045454545455,
+      "per_class": {
+        "Normal proxy": {
+          "precision": 0.9642857142857143,
+          "recall": 1.0,
+          "f1-score": 0.9818181818181818,
+          "support": 54.0
+        },
+        "Inner Race": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "Rolling Element": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "Outer Race": {
+          "precision": 1.0,
+          "recall": 0.7777777777777778,
+          "f1-score": 0.875,
+          "support": 9.0
+        },
+        "accuracy": 0.9682539682539683,
+        "macro avg": {
+          "precision": 0.4910714285714286,
+          "recall": 0.4444444444444444,
+          "f1-score": 0.4642045454545455,
+          "support": 63.0
+        },
+        "weighted avg": {
+          "precision": 0.9693877551020408,
+          "recall": 0.9682539682539683,
+          "f1-score": 0.9665584415584415,
+          "support": 63.0
+        }
+      }
+    },
+    "3rd_test B3": {
+      "accuracy": 0.978448275862069,
+      "macro_f1": 0.48496033927589727,
+      "per_class": {
+        "Normal proxy": {
+          "precision": 0.9973333333333333,
+          "recall": 1.0,
+          "f1-score": 0.9986648865153538,
+          "support": 374.0
+        },
+        "Inner Race": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "Rolling Element": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "Outer Race": {
+          "precision": 1.0,
+          "recall": 0.8888888888888888,
+          "f1-score": 0.9411764705882353,
+          "support": 90.0
+        },
+        "accuracy": 0.978448275862069,
+        "macro avg": {
+          "precision": 0.4993333333333333,
+          "recall": 0.4722222222222222,
+          "f1-score": 0.48496033927589727,
+          "support": 464.0
+        },
+        "weighted avg": {
+          "precision": 0.9978505747126436,
+          "recall": 0.978448275862069,
+          "f1-score": 0.9875141161846627,
+          "support": 464.0
+        }
+      }
+    }
+  },
+  "strict_forward_diagnostic": {
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "per_class": {
+      "Normal proxy": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "Inner Race": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 108.0
+      },
+      "Rolling Element": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 108.0
+      },
+      "Outer Race": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 367.0
+      },
+      "accuracy": 0.0,
+      "macro avg": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 583.0
+      },
+      "weighted avg": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 583.0
+      }
+    },
+    "train_classes": [
+      "Normal proxy"
+    ],
+    "test_classes": [
+      "Inner Race",
+      "Outer Race",
+      "Rolling Element"
+    ],
+    "valid_four_class_validation": false,
+    "note": "Forward split per lifetime has no fault classes in training; do not present as a valid fault classifier."
+  },
+  "limitations": [
+    "초기 20%를 Normal proxy, 마지막 5%를 종료 결함으로 가정한다. 임의적인 구간이며 실제 고장 시작 시각·정상 보증이 아니다.",
+    "중간 75%는 정답 불확실로 제외한다. 비결함 보고 베어링을 정상 정답으로 추가하지 않는다.",
+    "네 개 결함 사례뿐이며 Inner Race와 Rolling Element는 각각 단일 베어링이다. 결함 종류와 Test·Bearing의 센서 특성/시험 조건이 혼동될 수 있다.",
+    "주 평가는 각 베어링의 초기/말기 라벨 구간 안에서 앞 70% 학습, 간격 제외 후 뒤쪽 평가다. 동일 베어링 내부의 회고적 블록 평가이며 독립 설비 일반화 검증이 아니다.",
+    "말기 학습 행은 초기 정상 평가 행보다 미래다. 주 평가는 전체 수명에 대한 전역 시간순 미래 예측이 아니다. 모든 클래스를 학습에 포함하기 위한 진단용 평가다.",
+    "별도 전역 시간순 분할도 저장한다. 초기 학습 구간에는 결함 클래스가 없어 유효한 다중 결함 분류 검증이 불가능하다.",
+    "Outer Race에만 두 실험이 있다. 신뢰할 네 클래스 외부 검증을 수행할 독립 사례가 부족하다.",
+    "인접 측정의 자기상관, 클래스 불균형, 작은 말기 평가 표본이 남는다. 행 개수를 독립 고장 사례 개수로 해석하면 안 된다.",
+    "품질 의심 종료 기록도 기존 CSV 그대로 유지한다. 측정 중단/센서 변화가 학습에 영향을 줄 수 있다.",
+    "특징 중요도는 인과관계나 고유 결함 주파수의 입증이 아니다. 평가 데이터로 모델/특징/구간을 선택하지 않았다."
+  ],
+  "preprocessing_fit_partition": "train only",
+  "model_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": "balanced",
+    "criterion": "gini",
+    "max_depth": 12,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 2,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 300,
+    "n_jobs": 2,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "model_sha256": "a95a27b5434af73651295bc0132e85465c91db1fa13e167affc22ba653640f02",
+  "command": "C:\\bearing-pdm\\.venv\\Scripts\\python.exe C:\\bearing-pdm\\src\\train_ims_fault_types.py",
+  "versions": {
+    "python": "3.12.7",
+    "sklearn": "1.9.1",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4"
+  }
+}

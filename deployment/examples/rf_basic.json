@@ -1,0 +1,29 @@
+{
+  "model": "rf_basic",
+  "features": {
+    "sensor1_rms": 0.13191500837127573,
+    "sensor1_std": 0.09371787454942233,
+    "sensor1_peak": 0.613,
+    "sensor1_kurtosis": 3.4565609399520163,
+    "sensor1_crest_factor": 4.646931441452872,
+    "sensor1_fft_centroid_hz": 4437.213731035112,
+    "sensor1_fft_peak_1_hz": 986.328125,
+    "sensor1_fft_peak_1_amplitude": 0.033916511870125655,
+    "sensor1_fft_peak_2_hz": 987.3046875,
+    "sensor1_fft_peak_2_amplitude": 0.023196947838903494,
+    "sensor1_fft_peak_3_hz": 493.1640625,
+    "sensor1_fft_peak_3_amplitude": 0.021557551027099803,
+    "sensor2_rms": 0.13461054573634823,
+    "sensor2_std": 0.09767807528749015,
+    "sensor2_peak": 0.713,
+    "sensor2_kurtosis": 3.714629500599314,
+    "sensor2_crest_factor": 5.2967618257524975,
+    "sensor2_fft_centroid_hz": 5134.715477988159,
+    "sensor2_fft_peak_1_hz": 493.1640625,
+    "sensor2_fft_peak_1_amplitude": 0.016412479920834444,
+    "sensor2_fft_peak_2_hz": 986.328125,
+    "sensor2_fft_peak_2_amplitude": 0.014093180270712937,
+    "sensor2_fft_peak_3_hz": 8988.28125,
+    "sensor2_fft_peak_3_amplitude": 0.01225853733818917
+  }
+}

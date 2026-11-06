@@ -1,0 +1,11 @@
+# API에서 사용하는 파일만 허용해 원본 데이터와 Secrets가 빌드 컨텍스트에 들어가지 않게 한다.
+**
+!Dockerfile
+!requirements-api.txt
+!api.py
+!deployment/
+!deployment/model_manifest.json
+!models/
+!models/rf_basic.joblib
+!models/rf_basic_holdout.joblib
+!models/ridge_all_tests.joblib

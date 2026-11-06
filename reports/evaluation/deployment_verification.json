@@ -1,0 +1,132 @@
+{
+  "status": "LOCAL_API_AND_UI_PASS_DOCKER_CLOUD_NOT_DEPLOYED",
+  "python": "3.12.7",
+  "versions": {
+    "fastapi": "0.162.0",
+    "pydantic": "2.14.3",
+    "uvicorn": "0.54.0",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "streamlit": "1.66.1",
+    "requests": "2.34.2"
+  },
+  "tests": {
+    "command": ".venv/Scripts/python.exe -m unittest discover -s tests -v",
+    "run": 49,
+    "passed": 49,
+    "seconds": 36.194
+  },
+  "live_http": {
+    "url": "http://localhost:8000",
+    "health": 200,
+    "docs": 200,
+    "available_model_count": 3,
+    "streamlit_live_http_prediction": "PASS",
+    "api_outage_keeps_stored_results_and_rms": "PASS",
+    "ridge_prediction_hours": 511.1275510944539
+  },
+  "api_testclient": {
+    "direct_pipeline_prediction_matches": [
+      "rf_basic",
+      "rf_basic_holdout",
+      "ridge"
+    ],
+    "engineered_available": false,
+    "input_validation": "PASS",
+    "model_hash_missing_version_validation": "PASS",
+    "lazy_loading_and_max_two_cache": "PASS"
+  },
+  "ui_dependency_isolation": "PASS: Chart/Home without sklearn, joblib, fastapi, pydantic imports",
+  "linux_python312_wheel_resolution": {
+    "api_packages": 24,
+    "ui_packages": 42,
+    "status": "PASS; pip dry-run, not a container build"
+  },
+  "docker": {
+    "client": "29.9.2",
+    "daemon": "UNAVAILABLE",
+    "build": "ATTEMPTED_BLOCKED",
+    "container_run": "ATTEMPTED_BLOCKED",
+    "reason": "Cannot connect to npipe docker_engine: pipe not found. No image build/container success claimed."
+  },
+  "cloud_deploy": {
+    "render": "NOT_DEPLOYED_ACCOUNT_AUTH_REQUIRED",
+    "streamlit": "NOT_DEPLOYED_ACCOUNT_AUTH_REQUIRED",
+    "git_remote": "https://github.com/shinsangaa/bearing-pdm.git",
+    "branch": "master",
+    "git_push_performed": false
+  },
+  "preservation": {
+    "existing_data_files": 9468,
+    "existing_data_sizes_mtimes_unchanged": true,
+    "processed_sha256_unchanged": true,
+    "all_three_model_sha256_unchanged": true,
+    "model_training_performed": false,
+    "algorithm_ast_unchanged": {
+      "compute_fft_spectrum": true,
+      "prepare_alarm_frame": true,
+      "build_alarm_event_waterfall": true,
+      "replay_rms_figure": true,
+      "inject_custom_css": true
+    },
+    "alarm_preprocessing_signal_source_unchanged": true
+  },
+  "cloud_fft": {
+    "source": "Verified actual NASA TXT; exact-event precomputed spectra, never synthetic",
+    "bundles": [
+      {
+        "config": {
+          "experiment": "2nd_test",
+          "bearing": 1,
+          "sensor": 1,
+          "event_index": 609,
+          "multiplier": 5.0,
+          "consecutive": 3,
+          "trigger_level": "Alarm"
+        },
+        "times": 16,
+        "raw_source_bytes": 8855963,
+        "npz_bytes": 20461,
+        "metadata_bytes": 5348
+      },
+      {
+        "config": {
+          "experiment": "3rd_test",
+          "bearing": 3,
+          "sensor": 1,
+          "event_index": 6150,
+          "multiplier": 5.0,
+          "consecutive": 3,
+          "trigger_level": "Alarm"
+        },
+        "times": 16,
+        "raw_source_bytes": 8861537,
+        "npz_bytes": 20374,
+        "metadata_bytes": 5209
+      }
+    ],
+    "fallback_only_when_no_raw_files_in_replay": true,
+    "before_alarm_hidden": true,
+    "direct_txt_vs_npz_spectra_match": "PASS"
+  },
+  "new_data_only": [
+    "data/demo_fft/2nd_test_b1_s1_mad5_n3_alarm.json",
+    "data/demo_fft/2nd_test_b1_s1_mad5_n3_alarm.npz",
+    "data/demo_fft/3rd_test_b3_s1_mad5_n3_alarm.json",
+    "data/demo_fft/3rd_test_b3_s1_mad5_n3_alarm.npz"
+  ],
+  "known_limitations": [
+    "Docker engine unavailable; image/container not validated.",
+    "No cloud account connection, Git push or public deployment performed.",
+    "RF Engineered has no saved weights and is unavailable for new inference.",
+    "Cloud FFT without raw files supports two registered exact alarm events only.",
+    "Pixel-level browser inspection not performed."
+  ],
+  "source_import_graph": {
+    "ui": "app -> demo_support / preprocessing -> signal_processing; ims_alarm; api_client; cloud_waterfall. Local model reproduction imports ML lazily.",
+    "api": "api.py -> FastAPI/Pydantic/joblib/NumPy/pandas/sklearn; no training or UI imports."
+  }
+}

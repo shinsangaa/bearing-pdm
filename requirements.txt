@@ -1,0 +1,8 @@
+# Python 3.12; validated local model compatibility
+numpy==2.5.4
+pandas==3.1.0
+scipy==1.18.1
+matplotlib==3.11.2
+streamlit==1.66.1
+plotly==7.1.0
+requests==2.34.2

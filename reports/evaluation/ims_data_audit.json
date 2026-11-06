@@ -1,0 +1,691 @@
+{
+  "status": "PASS",
+  "experiments": {
+    "1st_test": {
+      "csv": "data/processed/1st_test.csv",
+      "csv_sha256": "4aa40f7807b600d925a1b5999de2f2f254595e6a8904f6c84d7cb106ba955cc7",
+      "rows": 17248,
+      "observations": 2156,
+      "first_at": "2003-10-22 12:06:24",
+      "end_at": "2003-11-25 23:39:56",
+      "columns": [
+        "source_path",
+        "test_id",
+        "bearing_id",
+        "channel_id",
+        "sensor_within_bearing",
+        "array_column",
+        "sampling_hz",
+        "sampling_hz_source",
+        "n_samples",
+        "snapshot_seconds",
+        "end_defect",
+        "rul_label_kind",
+        "rul_count_proxy",
+        "rul_calendar_hours_proxy",
+        "measurement_index",
+        "measured_at",
+        "dataset_end_at",
+        "elapsed_calendar_hours",
+        "interval_seconds",
+        "gap_before",
+        "segment_id",
+        "remaining_measurements",
+        "remaining_calendar_hours",
+        "elapsed_gap_excluded_hours_proxy",
+        "remaining_gap_excluded_hours_proxy",
+        "elapsed_operating_hours",
+        "rul_operating_hours",
+        "rms",
+        "std",
+        "peak",
+        "kurtosis",
+        "crest_factor",
+        "fft_centroid_hz",
+        "constant_signal",
+        "outlier_8std_count",
+        "fft_peak_1_hz",
+        "fft_peak_1_amplitude",
+        "fft_peak_2_hz",
+        "fft_peak_2_amplitude",
+        "fft_peak_3_hz",
+        "fft_peak_3_amplitude",
+        "quality_flag"
+      ],
+      "dtypes": {
+        "source_path": "str",
+        "test_id": "str",
+        "bearing_id": "int64",
+        "channel_id": "int64",
+        "sensor_within_bearing": "int64",
+        "array_column": "int64",
+        "sampling_hz": "int64",
+        "sampling_hz_source": "str",
+        "n_samples": "int64",
+        "snapshot_seconds": "float64",
+        "end_defect": "str",
+        "rul_label_kind": "str",
+        "rul_count_proxy": "float64",
+        "rul_calendar_hours_proxy": "float64",
+        "measurement_index": "int64",
+        "measured_at": "datetime64[us]",
+        "dataset_end_at": "str",
+        "elapsed_calendar_hours": "float64",
+        "interval_seconds": "float64",
+        "gap_before": "bool",
+        "segment_id": "int64",
+        "remaining_measurements": "int64",
+        "remaining_calendar_hours": "float64",
+        "elapsed_gap_excluded_hours_proxy": "float64",
+        "remaining_gap_excluded_hours_proxy": "float64",
+        "elapsed_operating_hours": "float64",
+        "rul_operating_hours": "float64",
+        "rms": "float64",
+        "std": "float64",
+        "peak": "float64",
+        "kurtosis": "float64",
+        "crest_factor": "float64",
+        "fft_centroid_hz": "float64",
+        "constant_signal": "bool",
+        "outlier_8std_count": "int64",
+        "fft_peak_1_hz": "float64",
+        "fft_peak_1_amplitude": "float64",
+        "fft_peak_2_hz": "float64",
+        "fft_peak_2_amplitude": "float64",
+        "fft_peak_3_hz": "float64",
+        "fft_peak_3_amplitude": "float64",
+        "quality_flag": "str"
+      },
+      "missing": {
+        "source_path": 0,
+        "test_id": 0,
+        "bearing_id": 0,
+        "channel_id": 0,
+        "sensor_within_bearing": 0,
+        "array_column": 0,
+        "sampling_hz": 0,
+        "sampling_hz_source": 0,
+        "n_samples": 0,
+        "snapshot_seconds": 0,
+        "end_defect": 0,
+        "rul_label_kind": 0,
+        "rul_count_proxy": 8624,
+        "rul_calendar_hours_proxy": 8624,
+        "measurement_index": 0,
+        "measured_at": 0,
+        "dataset_end_at": 0,
+        "elapsed_calendar_hours": 0,
+        "interval_seconds": 0,
+        "gap_before": 0,
+        "segment_id": 0,
+        "remaining_measurements": 0,
+        "remaining_calendar_hours": 0,
+        "elapsed_gap_excluded_hours_proxy": 0,
+        "remaining_gap_excluded_hours_proxy": 0,
+        "elapsed_operating_hours": 17248,
+        "rul_operating_hours": 17248,
+        "rms": 0,
+        "std": 0,
+        "peak": 0,
+        "kurtosis": 0,
+        "crest_factor": 0,
+        "fft_centroid_hz": 0,
+        "constant_signal": 0,
+        "outlier_8std_count": 0,
+        "fft_peak_1_hz": 0,
+        "fft_peak_1_amplitude": 0,
+        "fft_peak_2_hz": 0,
+        "fft_peak_2_amplitude": 0,
+        "fft_peak_3_hz": 0,
+        "fft_peak_3_amplitude": 0,
+        "quality_flag": 0
+      },
+      "channel_mapping": {
+        "1": [
+          1,
+          2
+        ],
+        "2": [
+          3,
+          4
+        ],
+        "3": [
+          5,
+          6
+        ],
+        "4": [
+          7,
+          8
+        ]
+      },
+      "reported_defects": {
+        "3": "inner_race",
+        "4": "rolling_element"
+      },
+      "duplicate_rows": 0,
+      "missing_raw": 0,
+      "ignored_files": [],
+      "raw_endpoints": [
+        {
+          "at": "2003-10-22 12:06:24",
+          "shape": [
+            20480,
+            8
+          ],
+          "rms": [
+            0.12461381908219575,
+            0.11749315326627928,
+            0.13045528223902134,
+            0.12164211343020062,
+            0.12888705027470987,
+            0.13182112106557356,
+            0.10902048975995397,
+            0.1152674244979512
+          ]
+        },
+        {
+          "at": "2003-11-25 23:39:56",
+          "shape": [
+            20480,
+            8
+          ],
+          "rms": [
+            0.17418140617143915,
+            0.15799142208716657,
+            0.21186038136331117,
+            0.20159702671825738,
+            0.5936098712110683,
+            0.4960007676641639,
+            0.22917609084552285,
+            0.20992772961225847
+          ]
+        }
+      ],
+      "quality_marks": []
+    },
+    "2nd_test": {
+      "csv": "data/processed/2nd_test.csv",
+      "csv_sha256": "4f134376ed4cab7c823bf73ea7dc700b03db45404e664aa953b1a8b362e4502a",
+      "rows": 3936,
+      "observations": 984,
+      "first_at": "2004-02-12 10:32:39",
+      "end_at": "2004-02-19 06:22:39",
+      "columns": [
+        "source_path",
+        "test_id",
+        "bearing_id",
+        "channel_id",
+        "sensor_within_bearing",
+        "array_column",
+        "sampling_hz",
+        "sampling_hz_source",
+        "n_samples",
+        "snapshot_seconds",
+        "end_defect",
+        "rul_label_kind",
+        "rul_count_proxy",
+        "rul_calendar_hours_proxy",
+        "measurement_index",
+        "measured_at",
+        "dataset_end_at",
+        "elapsed_calendar_hours",
+        "interval_seconds",
+        "gap_before",
+        "segment_id",
+        "remaining_measurements",
+        "remaining_calendar_hours",
+        "elapsed_gap_excluded_hours_proxy",
+        "remaining_gap_excluded_hours_proxy",
+        "elapsed_operating_hours",
+        "rul_operating_hours",
+        "rms",
+        "std",
+        "peak",
+        "kurtosis",
+        "crest_factor",
+        "fft_centroid_hz",
+        "constant_signal",
+        "outlier_8std_count",
+        "fft_peak_1_hz",
+        "fft_peak_1_amplitude",
+        "fft_peak_2_hz",
+        "fft_peak_2_amplitude",
+        "fft_peak_3_hz",
+        "fft_peak_3_amplitude",
+        "quality_flag"
+      ],
+      "dtypes": {
+        "source_path": "str",
+        "test_id": "str",
+        "bearing_id": "int64",
+        "channel_id": "int64",
+        "sensor_within_bearing": "int64",
+        "array_column": "int64",
+        "sampling_hz": "int64",
+        "sampling_hz_source": "str",
+        "n_samples": "int64",
+        "snapshot_seconds": "float64",
+        "end_defect": "str",
+        "rul_label_kind": "str",
+        "rul_count_proxy": "float64",
+        "rul_calendar_hours_proxy": "float64",
+        "measurement_index": "int64",
+        "measured_at": "datetime64[us]",
+        "dataset_end_at": "str",
+        "elapsed_calendar_hours": "float64",
+        "interval_seconds": "float64",
+        "gap_before": "bool",
+        "segment_id": "int64",
+        "remaining_measurements": "int64",
+        "remaining_calendar_hours": "float64",
+        "elapsed_gap_excluded_hours_proxy": "float64",
+        "remaining_gap_excluded_hours_proxy": "float64",
+        "elapsed_operating_hours": "float64",
+        "rul_operating_hours": "float64",
+        "rms": "float64",
+        "std": "float64",
+        "peak": "float64",
+        "kurtosis": "float64",
+        "crest_factor": "float64",
+        "fft_centroid_hz": "float64",
+        "constant_signal": "bool",
+        "outlier_8std_count": "int64",
+        "fft_peak_1_hz": "float64",
+        "fft_peak_1_amplitude": "float64",
+        "fft_peak_2_hz": "float64",
+        "fft_peak_2_amplitude": "float64",
+        "fft_peak_3_hz": "float64",
+        "fft_peak_3_amplitude": "float64",
+        "quality_flag": "str"
+      },
+      "missing": {
+        "source_path": 0,
+        "test_id": 0,
+        "bearing_id": 0,
+        "channel_id": 0,
+        "sensor_within_bearing": 0,
+        "array_column": 0,
+        "sampling_hz": 0,
+        "sampling_hz_source": 0,
+        "n_samples": 0,
+        "snapshot_seconds": 0,
+        "end_defect": 0,
+        "rul_label_kind": 0,
+        "rul_count_proxy": 2952,
+        "rul_calendar_hours_proxy": 2952,
+        "measurement_index": 0,
+        "measured_at": 0,
+        "dataset_end_at": 0,
+        "elapsed_calendar_hours": 0,
+        "interval_seconds": 0,
+        "gap_before": 0,
+        "segment_id": 0,
+        "remaining_measurements": 0,
+        "remaining_calendar_hours": 0,
+        "elapsed_gap_excluded_hours_proxy": 0,
+        "remaining_gap_excluded_hours_proxy": 0,
+        "elapsed_operating_hours": 3936,
+        "rul_operating_hours": 3936,
+        "rms": 0,
+        "std": 0,
+        "peak": 0,
+        "kurtosis": 0,
+        "crest_factor": 0,
+        "fft_centroid_hz": 0,
+        "constant_signal": 0,
+        "outlier_8std_count": 0,
+        "fft_peak_1_hz": 0,
+        "fft_peak_1_amplitude": 0,
+        "fft_peak_2_hz": 0,
+        "fft_peak_2_amplitude": 0,
+        "fft_peak_3_hz": 0,
+        "fft_peak_3_amplitude": 0,
+        "quality_flag": 0
+      },
+      "channel_mapping": {
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ],
+        "3": [
+          3
+        ],
+        "4": [
+          4
+        ]
+      },
+      "reported_defects": {
+        "1": "outer_race"
+      },
+      "duplicate_rows": 0,
+      "missing_raw": 0,
+      "ignored_files": [],
+      "raw_endpoints": [
+        {
+          "at": "2004-02-12 10:32:39",
+          "shape": [
+            20480,
+            4
+          ],
+          "rms": [
+            0.07417899856512641,
+            0.0909438869642825,
+            0.10940413919879155,
+            0.05410346803954619
+          ]
+        },
+        {
+          "at": "2004-02-19 06:22:39",
+          "shape": [
+            20480,
+            4
+          ],
+          "rms": [
+            0.0015327320633837277,
+            0.0012386989141838032,
+            0.0011971034377300598,
+            0.0021241036712575613
+          ]
+        }
+      ],
+      "quality_marks": [
+        {
+          "measured_at": "2004-02-19 06:12:39",
+          "bearing_id": "1",
+          "rms": "0.002103011233921493",
+          "quality_flag": "suspected_stop_or_measurement_change"
+        },
+        {
+          "measured_at": "2004-02-19 06:12:39",
+          "bearing_id": "2",
+          "rms": "0.004017825272691062",
+          "quality_flag": "suspected_stop_or_measurement_change"
+        },
+        {
+          "measured_at": "2004-02-19 06:12:39",
+          "bearing_id": "3",
+          "rms": "0.003950171821816743",
+          "quality_flag": "suspected_stop_or_measurement_change"
+        },
+        {
+          "measured_at": "2004-02-19 06:12:39",
+          "bearing_id": "4",
+          "rms": "0.002153666931073605",
+          "quality_flag": "suspected_stop_or_measurement_change"
+        },
+        {
+          "measured_at": "2004-02-19 06:22:39",
+          "bearing_id": "1",
+          "rms": "0.001532732063383878",
+          "quality_flag": "suspected_stop_or_measurement_change"
+        },
+        {
+          "measured_at": "2004-02-19 06:22:39",
+          "bearing_id": "2",
+          "rms": "0.0012386989141837494",
+          "quality_flag": "suspected_stop_or_measurement_change"
+        },
+        {
+          "measured_at": "2004-02-19 06:22:39",
+          "bearing_id": "3",
+          "rms": "0.0011971034377300065",
+          "quality_flag": "suspected_stop_or_measurement_change"
+        },
+        {
+          "measured_at": "2004-02-19 06:22:39",
+          "bearing_id": "4",
+          "rms": "0.002124103671257597",
+          "quality_flag": "suspected_stop_or_measurement_change"
+        }
+      ]
+    },
+    "3rd_test": {
+      "csv": "data/processed/3rd_test.csv",
+      "csv_sha256": "a247591399a60b00ce45bcb8f8d2f6f36b0d787be30d71185ffac5124c952273",
+      "rows": 25296,
+      "observations": 6324,
+      "first_at": "2004-03-04 09:27:46",
+      "end_at": "2004-04-18 02:42:55",
+      "columns": [
+        "source_path",
+        "test_id",
+        "bearing_id",
+        "channel_id",
+        "sensor_within_bearing",
+        "array_column",
+        "sampling_hz",
+        "sampling_hz_source",
+        "n_samples",
+        "snapshot_seconds",
+        "end_defect",
+        "rul_label_kind",
+        "rul_count_proxy",
+        "rul_calendar_hours_proxy",
+        "measurement_index",
+        "measured_at",
+        "dataset_end_at",
+        "elapsed_calendar_hours",
+        "interval_seconds",
+        "gap_before",
+        "segment_id",
+        "remaining_measurements",
+        "remaining_calendar_hours",
+        "elapsed_gap_excluded_hours_proxy",
+        "remaining_gap_excluded_hours_proxy",
+        "elapsed_operating_hours",
+        "rul_operating_hours",
+        "rms",
+        "std",
+        "peak",
+        "kurtosis",
+        "crest_factor",
+        "fft_centroid_hz",
+        "constant_signal",
+        "outlier_8std_count",
+        "fft_peak_1_hz",
+        "fft_peak_1_amplitude",
+        "fft_peak_2_hz",
+        "fft_peak_2_amplitude",
+        "fft_peak_3_hz",
+        "fft_peak_3_amplitude",
+        "quality_flag"
+      ],
+      "dtypes": {
+        "source_path": "str",
+        "test_id": "str",
+        "bearing_id": "int64",
+        "channel_id": "int64",
+        "sensor_within_bearing": "int64",
+        "array_column": "int64",
+        "sampling_hz": "int64",
+        "sampling_hz_source": "str",
+        "n_samples": "int64",
+        "snapshot_seconds": "float64",
+        "end_defect": "str",
+        "rul_label_kind": "str",
+        "rul_count_proxy": "float64",
+        "rul_calendar_hours_proxy": "float64",
+        "measurement_index": "int64",
+        "measured_at": "datetime64[us]",
+        "dataset_end_at": "str",
+        "elapsed_calendar_hours": "float64",
+        "interval_seconds": "float64",
+        "gap_before": "bool",
+        "segment_id": "int64",
+        "remaining_measurements": "int64",
+        "remaining_calendar_hours": "float64",
+        "elapsed_gap_excluded_hours_proxy": "float64",
+        "remaining_gap_excluded_hours_proxy": "float64",
+        "elapsed_operating_hours": "float64",
+        "rul_operating_hours": "float64",
+        "rms": "float64",
+        "std": "float64",
+        "peak": "float64",
+        "kurtosis": "float64",
+        "crest_factor": "float64",
+        "fft_centroid_hz": "float64",
+        "constant_signal": "bool",
+        "outlier_8std_count": "int64",
+        "fft_peak_1_hz": "float64",
+        "fft_peak_1_amplitude": "float64",
+        "fft_peak_2_hz": "float64",
+        "fft_peak_2_amplitude": "float64",
+        "fft_peak_3_hz": "float64",
+        "fft_peak_3_amplitude": "float64",
+        "quality_flag": "str"
+      },
+      "missing": {
+        "source_path": 0,
+        "test_id": 0,
+        "bearing_id": 0,
+        "channel_id": 0,
+        "sensor_within_bearing": 0,
+        "array_column": 0,
+        "sampling_hz": 0,
+        "sampling_hz_source": 0,
+        "n_samples": 0,
+        "snapshot_seconds": 0,
+        "end_defect": 0,
+        "rul_label_kind": 0,
+        "rul_count_proxy": 18972,
+        "rul_calendar_hours_proxy": 18972,
+        "measurement_index": 0,
+        "measured_at": 0,
+        "dataset_end_at": 0,
+        "elapsed_calendar_hours": 0,
+        "interval_seconds": 0,
+        "gap_before": 0,
+        "segment_id": 0,
+        "remaining_measurements": 0,
+        "remaining_calendar_hours": 0,
+        "elapsed_gap_excluded_hours_proxy": 0,
+        "remaining_gap_excluded_hours_proxy": 0,
+        "elapsed_operating_hours": 25296,
+        "rul_operating_hours": 25296,
+        "rms": 0,
+        "std": 0,
+        "peak": 0,
+        "kurtosis": 0,
+        "crest_factor": 0,
+        "fft_centroid_hz": 0,
+        "constant_signal": 0,
+        "outlier_8std_count": 0,
+        "fft_peak_1_hz": 0,
+        "fft_peak_1_amplitude": 0,
+        "fft_peak_2_hz": 0,
+        "fft_peak_2_amplitude": 0,
+        "fft_peak_3_hz": 0,
+        "fft_peak_3_amplitude": 0,
+        "quality_flag": 0
+      },
+      "channel_mapping": {
+        "1": [
+          1
+        ],
+        "2": [
+          2
+        ],
+        "3": [
+          3
+        ],
+        "4": [
+          4
+        ]
+      },
+      "reported_defects": {
+        "3": "outer_race"
+      },
+      "duplicate_rows": 0,
+      "missing_raw": 0,
+      "ignored_files": [],
+      "raw_endpoints": [
+        {
+          "at": "2004-03-04 09:27:46",
+          "shape": [
+            20480,
+            4
+          ],
+          "rms": [
+            0.07976827615574617,
+            0.09671966200095204,
+            0.0663900075724404,
+            0.055492571469352506
+          ]
+        },
+        {
+          "at": "2004-04-18 02:42:55",
+          "shape": [
+            20480,
+            4
+          ],
+          "rms": [
+            0.0019120429396655007,
+            0.0027893491624392886,
+            0.003965660707089042,
+            0.0018504116940560825
+          ]
+        }
+      ],
+      "quality_marks": [
+        {
+          "measured_at": "2004-04-18 02:42:55",
+          "bearing_id": "1",
+          "rms": "0.001912042939665582",
+          "quality_flag": "suspected_stop_or_measurement_change"
+        },
+        {
+          "measured_at": "2004-04-18 02:42:55",
+          "bearing_id": "2",
+          "rms": "0.0027893491624391524",
+          "quality_flag": "suspected_stop_or_measurement_change"
+        },
+        {
+          "measured_at": "2004-04-18 02:42:55",
+          "bearing_id": "3",
+          "rms": "0.003965660707089047",
+          "quality_flag": "suspected_stop_or_measurement_change"
+        },
+        {
+          "measured_at": "2004-04-18 02:42:55",
+          "bearing_id": "4",
+          "rms": "0.0018504116940562172",
+          "quality_flag": "suspected_stop_or_measurement_change"
+        }
+      ]
+    }
+  },
+  "second_final_drop_raw_review": [
+    {
+      "at": "2004-02-19 06:02:39",
+      "rms": [
+        0.48383539535148185,
+        0.1936410931316486,
+        0.18740544816507881,
+        0.13058233846558515
+      ]
+    },
+    {
+      "at": "2004-02-19 06:12:39",
+      "rms": [
+        0.0021030112339215853,
+        0.004017825272691032,
+        0.003950171821816733,
+        0.0021536669310737964
+      ]
+    },
+    {
+      "at": "2004-02-19 06:22:39",
+      "rms": [
+        0.0015327320633837277,
+        0.0012386989141838032,
+        0.0011971034377300598,
+        0.0021241036712575613
+      ]
+    }
+  ],
+  "quality_policy": "원인 미확정; 정지/측정 상태 변화 의심. 원본·행 유지. 주 평가에 포함하고 별도 민감도 결과도 기록.",
+  "label": "보고된 고장 베어링만 시험 마지막 기록까지의 달력 시간 대리 RUL; 실제 고장 시각 아님",
+  "raw_files_hashed": 9464
+}

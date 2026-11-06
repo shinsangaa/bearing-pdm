@@ -1,0 +1,317 @@
+{
+  "input": "C:\\bearing-pdm\\data\\processed\\nasa_ims_features.csv",
+  "input_sha256": "fd99152f2fa13b52dd2a6ea4888f2660c5201497bdf6d87bbb9b0a7f97eabac8",
+  "script_sha256": "7387cc5669364625507979ce0201b2dd774498f359433b3c85504c8af569a1cd",
+  "inspection": {
+    "csv_columns": [
+      "source_path",
+      "test_id",
+      "bearing_id",
+      "channel_id",
+      "sensor_within_bearing",
+      "array_column",
+      "sampling_hz",
+      "sampling_hz_source",
+      "n_samples",
+      "snapshot_seconds",
+      "end_defect",
+      "rul_label_kind",
+      "rul_count_proxy",
+      "rul_calendar_hours_proxy",
+      "measurement_index",
+      "measured_at",
+      "dataset_end_at",
+      "elapsed_calendar_hours",
+      "interval_seconds",
+      "gap_before",
+      "segment_id",
+      "remaining_measurements",
+      "remaining_calendar_hours",
+      "elapsed_gap_excluded_hours_proxy",
+      "remaining_gap_excluded_hours_proxy",
+      "elapsed_operating_hours",
+      "rul_operating_hours",
+      "rms",
+      "std",
+      "peak",
+      "kurtosis",
+      "crest_factor",
+      "fft_centroid_hz",
+      "constant_signal",
+      "outlier_8std_count",
+      "fft_peak_1_hz",
+      "fft_peak_1_amplitude",
+      "fft_peak_2_hz",
+      "fft_peak_2_amplitude",
+      "fft_peak_3_hz",
+      "fft_peak_3_amplitude"
+    ],
+    "csv_rows": 8624,
+    "selected_sensor_rows": 8624,
+    "measurements": 2156,
+    "bearing_time_rows": 4312,
+    "first_at": "2003-10-22 12:06:24",
+    "last_at": "2003-11-25 23:39:56",
+    "dataset_end_at": "2003-11-25 23:39:56",
+    "target": "rul_calendar_hours_proxy",
+    "target_unit": "달력 시간(시간)",
+    "rul_label_kind": "test_end_proxy_not_exact_failure_time",
+    "target_range_hours": [
+      0.0,
+      827.5588888888889
+    ],
+    "channel_mapping": {
+      "3": [
+        5,
+        6
+      ],
+      "4": [
+        7,
+        8
+      ]
+    },
+    "sensor_rows_per_bearing": {
+      "3": 4312,
+      "4": 4312
+    },
+    "available_rul_columns": [
+      "rul_label_kind",
+      "rul_count_proxy",
+      "rul_calendar_hours_proxy",
+      "remaining_measurements",
+      "remaining_calendar_hours",
+      "remaining_gap_excluded_hours_proxy",
+      "rul_operating_hours"
+    ],
+    "rul_units": {
+      "rul_calendar_hours_proxy": "시간; 기록 공백을 포함한 종료까지 남은 달력 시간",
+      "rul_count_proxy": "회; 종료까지 남은 측정 파일 수",
+      "remaining_gap_excluded_hours_proxy": "시간; 긴 기록 공백 전체를 제외한 대리값, 실제 가동시간 아님",
+      "rul_operating_hours": "시간; 실제 가동시간 미상으로 결측"
+    },
+    "excluded_csv_columns": [
+      "array_column",
+      "bearing_id",
+      "channel_id",
+      "constant_signal",
+      "dataset_end_at",
+      "elapsed_calendar_hours",
+      "elapsed_gap_excluded_hours_proxy",
+      "elapsed_operating_hours",
+      "end_defect",
+      "gap_before",
+      "interval_seconds",
+      "measured_at",
+      "measurement_index",
+      "n_samples",
+      "outlier_8std_count",
+      "remaining_calendar_hours",
+      "remaining_gap_excluded_hours_proxy",
+      "remaining_measurements",
+      "rul_calendar_hours_proxy",
+      "rul_count_proxy",
+      "rul_label_kind",
+      "rul_operating_hours",
+      "sampling_hz",
+      "sampling_hz_source",
+      "segment_id",
+      "sensor_within_bearing",
+      "snapshot_seconds",
+      "source_path",
+      "test_id"
+    ]
+  },
+  "signal_features": [
+    "rms",
+    "std",
+    "peak",
+    "kurtosis",
+    "crest_factor",
+    "fft_centroid_hz",
+    "fft_peak_1_hz",
+    "fft_peak_1_amplitude",
+    "fft_peak_2_hz",
+    "fft_peak_2_amplitude",
+    "fft_peak_3_hz",
+    "fft_peak_3_amplitude"
+  ],
+  "model_features": [
+    "sensor1_rms",
+    "sensor1_std",
+    "sensor1_peak",
+    "sensor1_kurtosis",
+    "sensor1_crest_factor",
+    "sensor1_fft_centroid_hz",
+    "sensor1_fft_peak_1_hz",
+    "sensor1_fft_peak_1_amplitude",
+    "sensor1_fft_peak_2_hz",
+    "sensor1_fft_peak_2_amplitude",
+    "sensor1_fft_peak_3_hz",
+    "sensor1_fft_peak_3_amplitude",
+    "sensor2_rms",
+    "sensor2_std",
+    "sensor2_peak",
+    "sensor2_kurtosis",
+    "sensor2_crest_factor",
+    "sensor2_fft_centroid_hz",
+    "sensor2_fft_peak_1_hz",
+    "sensor2_fft_peak_1_amplitude",
+    "sensor2_fft_peak_2_hz",
+    "sensor2_fft_peak_2_amplitude",
+    "sensor2_fft_peak_3_hz",
+    "sensor2_fft_peak_3_amplitude"
+  ],
+  "split_audit": {
+    "train_measurements": 1724,
+    "test_measurements": 432,
+    "gap_measurements": 0,
+    "train_rows": 3448,
+    "test_rows": 864,
+    "train_first_at": "2003-10-22 12:06:24",
+    "train_last_at": "2003-11-21 22:16:56",
+    "test_first_at": "2003-11-21 22:26:56",
+    "test_last_at": "2003-11-25 23:39:56",
+    "time_overlap_count": 0,
+    "source_file_overlap_count": 0,
+    "strict_time_order": true,
+    "all_bearings_at_same_time_in_one_partition": true,
+    "passed": true
+  },
+  "train_fraction": 0.8,
+  "seed": 42,
+  "provisional": false,
+  "evaluation_status": "1st Test 내부 회고적 시간순 홀드아웃",
+  "model_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 5,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 300,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "imputation": "중앙값; 학습 행에만 적합",
+  "refit_with_test": false,
+  "training_missing_counts": {
+    "sensor1_rms": 0,
+    "sensor1_std": 0,
+    "sensor1_peak": 0,
+    "sensor1_kurtosis": 0,
+    "sensor1_crest_factor": 0,
+    "sensor1_fft_centroid_hz": 0,
+    "sensor1_fft_peak_1_hz": 0,
+    "sensor1_fft_peak_1_amplitude": 0,
+    "sensor1_fft_peak_2_hz": 0,
+    "sensor1_fft_peak_2_amplitude": 0,
+    "sensor1_fft_peak_3_hz": 0,
+    "sensor1_fft_peak_3_amplitude": 0,
+    "sensor2_rms": 0,
+    "sensor2_std": 0,
+    "sensor2_peak": 0,
+    "sensor2_kurtosis": 0,
+    "sensor2_crest_factor": 0,
+    "sensor2_fft_centroid_hz": 0,
+    "sensor2_fft_peak_1_hz": 0,
+    "sensor2_fft_peak_1_amplitude": 0,
+    "sensor2_fft_peak_2_hz": 0,
+    "sensor2_fft_peak_2_amplitude": 0,
+    "sensor2_fft_peak_3_hz": 0,
+    "sensor2_fft_peak_3_amplitude": 0
+  },
+  "baseline_constants_hours": {
+    "train_median": 372.3161111111111,
+    "last_train_target": 97.38333333333334
+  },
+  "metrics": {
+    "overall": {
+      "random_forest": {
+        "MAE_hours": 90.42975934133936,
+        "RMSE_hours": 104.08575690888495
+      },
+      "train_median": {
+        "MAE_hours": 315.5389525462963,
+        "RMSE_hours": 316.55843996875285
+      },
+      "last_train_target": {
+        "MAE_hours": 40.60617476851852,
+        "RMSE_hours": 47.88816942385812
+      }
+    },
+    "bearing_3": {
+      "random_forest": {
+        "MAE_hours": 101.69019827270733,
+        "RMSE_hours": 114.39123610713195
+      },
+      "train_median": {
+        "MAE_hours": 315.5389525462963,
+        "RMSE_hours": 316.55843996875285
+      },
+      "last_train_target": {
+        "MAE_hours": 40.60617476851853,
+        "RMSE_hours": 47.88816942385812
+      }
+    },
+    "bearing_4": {
+      "random_forest": {
+        "MAE_hours": 79.16932040997138,
+        "RMSE_hours": 92.6408909956795
+      },
+      "train_median": {
+        "MAE_hours": 315.5389525462963,
+        "RMSE_hours": 316.55843996875285
+      },
+      "last_train_target": {
+        "MAE_hours": 40.60617476851853,
+        "RMSE_hours": 47.88816942385812
+      }
+    }
+  },
+  "comparison_note": "Random Forest의 MAE가 마지막 학습 정답 고정 기준보다 크거나 같다. 기준선 대비 개선을 입증하지 못했다.",
+  "target_ranges_hours": {
+    "train": [
+      97.38333333333334,
+      827.5588888888889
+    ],
+    "test": [
+      0.0,
+      97.21666666666667
+    ]
+  },
+  "prediction_range_hours": [
+    99.52260910342753,
+    513.5194273592646
+  ],
+  "limitations": [
+    "정답은 마지막 기록까지 남은 달력 시간의 대리값이다. 정확한 고장 시각, 실제 잔여 수명, 실제 가동시간이 아니다.",
+    "Bearing 3의 내륜 결함과 Bearing 4의 전동체 결함은 종료 시 확인되었다. 두 베어링의 고장이 마지막 기록에 동시에 발생했다고 가정하지 않는다.",
+    "학습·평가가 동일 1st Test와 동일 베어링 수명 궤적을 공유한다. 다른 시험·베어링·설비에서의 일반화 성능은 검증하지 않았다.",
+    "학습 구간의 RUL 정답도 시험 종료 후 생성된 회고적 정답이다. 해당 정답을 가진 모델이 분할 시점에 실제로 이용 가능했다는 뜻이 아니다.",
+    "시간·종료점·순번·정답 파생 열은 입력에서 제외했으며 결측 대체값도 학습 부분에만 적합했다. 미래 평가 특징이나 정답을 적합·튜닝에 사용하지 않았다.",
+    "앞부분 학습 정답보다 뒷부분 평가 정답이 작다. Random Forest는 학습 정답 범위 밖으로 외삽하지 못해 종료 직전의 작은 RUL을 예측하기 어렵다.",
+    "단순 기준 예측도 학습 정답만 사용하지만 그 정답 자체는 종료 후 알려진 대리값이다. 실시간으로 이용 가능한 잔여 수명 기준선으로 해석하면 안 된다.",
+    "두 베어링은 같은 시험 조건과 종료점을 공유하며 인접 측정도 상관되어 있다. 행 수를 독립 수명 실험 수로 해석하지 않는다.",
+    "긴 기록 공백도 달력 RUL에 포함된다. 기록 공백이 모두 정지시간인지, 센서의 물리 단위가 무엇인지 임의로 단정하지 않는다.",
+    "고정된 시간순 홀드아웃을 한 번 평가한다. 평가 결과로 설정을 반복 선택하면 별도 최종 시험셋이 필요하다."
+  ],
+  "model_output": "C:\\bearing-pdm\\models\\rf_basic.joblib",
+  "versions": {
+    "python": "3.12.7",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "joblib": "1.6.0"
+  },
+  "command": "C:\\bearing-pdm\\.venv\\Scripts\\python.exe src\\train_rul_baseline.py",
+  "model_sha256": "c108d92cb52f5a5dbec211f49b788f7019bd4e945f645cfb65b7f9a338c1f020"
+}

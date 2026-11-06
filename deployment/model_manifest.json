@@ -1,0 +1,110 @@
+{
+  "python": "3.12",
+  "target": "rul_calendar_hours_proxy",
+  "inference_versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "models": {
+    "rf_basic": {
+      "artifact": "models/rf_basic.joblib",
+      "sha256": "c108d92cb52f5a5dbec211f49b788f7019bd4e945f645cfb65b7f9a338c1f020",
+      "features": [
+        "sensor1_rms",
+        "sensor1_std",
+        "sensor1_peak",
+        "sensor1_kurtosis",
+        "sensor1_crest_factor",
+        "sensor1_fft_centroid_hz",
+        "sensor1_fft_peak_1_hz",
+        "sensor1_fft_peak_1_amplitude",
+        "sensor1_fft_peak_2_hz",
+        "sensor1_fft_peak_2_amplitude",
+        "sensor1_fft_peak_3_hz",
+        "sensor1_fft_peak_3_amplitude",
+        "sensor2_rms",
+        "sensor2_std",
+        "sensor2_peak",
+        "sensor2_kurtosis",
+        "sensor2_crest_factor",
+        "sensor2_fft_centroid_hz",
+        "sensor2_fft_peak_1_hz",
+        "sensor2_fft_peak_1_amplitude",
+        "sensor2_fft_peak_2_hz",
+        "sensor2_fft_peak_2_amplitude",
+        "sensor2_fft_peak_3_hz",
+        "sensor2_fft_peak_3_amplitude"
+      ],
+      "family": "RF Basic",
+      "input_scope": "1st_test B3/B4; two sensor features joined, 24 columns.",
+      "preprocessing": "Median imputer -> RandomForestRegressor",
+      "note": "Within-1st-test chronological model; not independent failure life.",
+      "clip_nonnegative": false
+    },
+    "rf_basic_holdout": {
+      "artifact": "models/rf_basic_holdout.joblib",
+      "sha256": "0f750e974a30dc3201714b6bab22bbe953280fccd638884d765b7ab51f02b8a9",
+      "features": [
+        "rms",
+        "std",
+        "peak",
+        "kurtosis",
+        "crest_factor",
+        "fft_centroid_hz",
+        "fft_peak_1_hz",
+        "fft_peak_1_amplitude",
+        "fft_peak_2_hz",
+        "fft_peak_2_amplitude",
+        "fft_peak_3_hz",
+        "fft_peak_3_amplitude"
+      ],
+      "family": "RF Basic",
+      "input_scope": "1st Train / 2nd Validation / 3rd Test; average sensors, 12 columns.",
+      "preprocessing": "Median imputer -> RandomForestRegressor",
+      "note": "Separate RF Basic evaluation protocol; not RF Engineered.",
+      "clip_nonnegative": false
+    },
+    "ridge": {
+      "artifact": "models/ridge_all_tests.joblib",
+      "sha256": "f4f8f814ea8771edfddaba038d36b518406da7644a5e0b2270005eed5b7ab974",
+      "features": [
+        "rms",
+        "std",
+        "peak",
+        "kurtosis",
+        "crest_factor",
+        "fft_centroid_hz"
+      ],
+      "family": "Ridge",
+      "input_scope": "First sensor per bearing; six snapshot features.",
+      "preprocessing": "Median imputer -> StandardScaler -> Ridge(alpha=1000)",
+      "note": "Final weights trained on all three tests; not the weights for saved held-out Test 3 predictions.",
+      "clip_nonnegative": true
+    },
+    "rf_engineered": {
+      "artifact": null,
+      "family": "RF Engineered",
+      "features": [
+        "rms",
+        "std",
+        "peak",
+        "kurtosis",
+        "crest_factor",
+        "fft_centroid_hz",
+        "rms_ma6",
+        "rms_ma36",
+        "rms_std36",
+        "rms_diff6",
+        "kurtosis_ma6"
+      ],
+      "input_scope": "1st Train -> 2nd Validation; first sensor, 11 features.",
+      "preprocessing": "Median imputer -> RandomForestRegressor",
+      "note": "Only historical comparison metrics exist.",
+      "unavailable_reason": "RF Engineered weights were never saved; no trained model is available.",
+      "clip_nonnegative": false
+    }
+  }
+}

@@ -1,0 +1,349 @@
+{
+  "model": "Random Forest",
+  "protocol": "experiment_holdout",
+  "audit": {
+    "partitions": {
+      "train": {
+        "experiment": "1st_test",
+        "csv": "C:\\bearing-pdm\\data\\processed\\1st_test.csv",
+        "csv_sha256": "4aa40f7807b600d925a1b5999de2f2f254595e6a8904f6c84d7cb106ba955cc7",
+        "source_rows": 17248,
+        "selected_sensor_rows": 8624,
+        "bearing_rows": 4312,
+        "bearings": [
+          3,
+          4
+        ],
+        "sensors_per_bearing": {
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": 2
+        },
+        "first_at": "2003-10-22 12:06:24",
+        "end_at": "2003-11-25 23:39:56",
+        "missing_features": {
+          "rms": 0,
+          "std": 0,
+          "peak": 0,
+          "kurtosis": 0,
+          "crest_factor": 0,
+          "fft_centroid_hz": 0,
+          "fft_peak_1_hz": 0,
+          "fft_peak_1_amplitude": 0,
+          "fft_peak_2_hz": 0,
+          "fft_peak_2_amplitude": 0,
+          "fft_peak_3_hz": 0,
+          "fft_peak_3_amplitude": 0
+        },
+        "quality_marked_rows": 0,
+        "excluded_columns": [
+          "array_column",
+          "bearing_id",
+          "channel_id",
+          "constant_signal",
+          "dataset_end_at",
+          "elapsed_calendar_hours",
+          "elapsed_gap_excluded_hours_proxy",
+          "elapsed_operating_hours",
+          "end_defect",
+          "gap_before",
+          "interval_seconds",
+          "measured_at",
+          "measurement_index",
+          "n_samples",
+          "outlier_8std_count",
+          "quality_flag",
+          "remaining_calendar_hours",
+          "remaining_gap_excluded_hours_proxy",
+          "remaining_measurements",
+          "rul_calendar_hours_proxy",
+          "rul_count_proxy",
+          "rul_label_kind",
+          "rul_operating_hours",
+          "sampling_hz",
+          "sampling_hz_source",
+          "segment_id",
+          "sensor_within_bearing",
+          "snapshot_seconds",
+          "source_path",
+          "test_id"
+        ]
+      },
+      "validation": {
+        "experiment": "2nd_test",
+        "csv": "C:\\bearing-pdm\\data\\processed\\2nd_test.csv",
+        "csv_sha256": "4f134376ed4cab7c823bf73ea7dc700b03db45404e664aa953b1a8b362e4502a",
+        "source_rows": 3936,
+        "selected_sensor_rows": 984,
+        "bearing_rows": 984,
+        "bearings": [
+          1
+        ],
+        "sensors_per_bearing": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1
+        },
+        "first_at": "2004-02-12 10:32:39",
+        "end_at": "2004-02-19 06:22:39",
+        "missing_features": {
+          "rms": 0,
+          "std": 0,
+          "peak": 0,
+          "kurtosis": 0,
+          "crest_factor": 0,
+          "fft_centroid_hz": 0,
+          "fft_peak_1_hz": 0,
+          "fft_peak_1_amplitude": 0,
+          "fft_peak_2_hz": 0,
+          "fft_peak_2_amplitude": 0,
+          "fft_peak_3_hz": 0,
+          "fft_peak_3_amplitude": 0
+        },
+        "quality_marked_rows": 2,
+        "excluded_columns": [
+          "array_column",
+          "bearing_id",
+          "channel_id",
+          "constant_signal",
+          "dataset_end_at",
+          "elapsed_calendar_hours",
+          "elapsed_gap_excluded_hours_proxy",
+          "elapsed_operating_hours",
+          "end_defect",
+          "gap_before",
+          "interval_seconds",
+          "measured_at",
+          "measurement_index",
+          "n_samples",
+          "outlier_8std_count",
+          "quality_flag",
+          "remaining_calendar_hours",
+          "remaining_gap_excluded_hours_proxy",
+          "remaining_measurements",
+          "rul_calendar_hours_proxy",
+          "rul_count_proxy",
+          "rul_label_kind",
+          "rul_operating_hours",
+          "sampling_hz",
+          "sampling_hz_source",
+          "segment_id",
+          "sensor_within_bearing",
+          "snapshot_seconds",
+          "source_path",
+          "test_id"
+        ]
+      },
+      "test": {
+        "experiment": "3rd_test",
+        "csv": "C:\\bearing-pdm\\data\\processed\\3rd_test.csv",
+        "csv_sha256": "a247591399a60b00ce45bcb8f8d2f6f36b0d787be30d71185ffac5124c952273",
+        "source_rows": 25296,
+        "selected_sensor_rows": 6324,
+        "bearing_rows": 6324,
+        "bearings": [
+          3
+        ],
+        "sensors_per_bearing": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1
+        },
+        "first_at": "2004-03-04 09:27:46",
+        "end_at": "2004-04-18 02:42:55",
+        "missing_features": {
+          "rms": 0,
+          "std": 0,
+          "peak": 0,
+          "kurtosis": 0,
+          "crest_factor": 0,
+          "fft_centroid_hz": 0,
+          "fft_peak_1_hz": 0,
+          "fft_peak_1_amplitude": 0,
+          "fft_peak_2_hz": 0,
+          "fft_peak_2_amplitude": 0,
+          "fft_peak_3_hz": 0,
+          "fft_peak_3_amplitude": 0
+        },
+        "quality_marked_rows": 1,
+        "excluded_columns": [
+          "array_column",
+          "bearing_id",
+          "channel_id",
+          "constant_signal",
+          "dataset_end_at",
+          "elapsed_calendar_hours",
+          "elapsed_gap_excluded_hours_proxy",
+          "elapsed_operating_hours",
+          "end_defect",
+          "gap_before",
+          "interval_seconds",
+          "measured_at",
+          "measurement_index",
+          "n_samples",
+          "outlier_8std_count",
+          "quality_flag",
+          "remaining_calendar_hours",
+          "remaining_gap_excluded_hours_proxy",
+          "remaining_measurements",
+          "rul_calendar_hours_proxy",
+          "rul_count_proxy",
+          "rul_label_kind",
+          "rul_operating_hours",
+          "sampling_hz",
+          "sampling_hz_source",
+          "segment_id",
+          "sensor_within_bearing",
+          "snapshot_seconds",
+          "source_path",
+          "test_id"
+        ]
+      }
+    },
+    "experiment_ids_disjoint": true,
+    "source_files_disjoint": true,
+    "feature_names": [
+      "rms",
+      "std",
+      "peak",
+      "kurtosis",
+      "crest_factor",
+      "fft_centroid_hz",
+      "fft_peak_1_hz",
+      "fft_peak_1_amplitude",
+      "fft_peak_2_hz",
+      "fft_peak_2_amplitude",
+      "fft_peak_3_hz",
+      "fft_peak_3_amplitude"
+    ],
+    "identifier_or_rul_features": false,
+    "aggregation": "베어링·측정 시점별 센서 특징 평균; 1st의 두 센서 평균, 2nd/3rd의 한 센서 그대로",
+    "target": "rul_calendar_hours_proxy",
+    "label_policy": "보고된 결함 베어링만 마지막 기록까지의 달력 시간 대리값; 실제 고장 시각 아님",
+    "last_quality_suspect_rows_included": true,
+    "fit_partition": "train",
+    "test_used_for_selection": false
+  },
+  "selected": {
+    "max_depth": null,
+    "min_samples_leaf": 5,
+    "trees": 200,
+    "validation": {
+      "MAE_hours": 585.145073996014,
+      "RMSE_hours": 641.5833796965618,
+      "R2": -182.65392246922207
+    }
+  },
+  "trials": [
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "trees": 200,
+      "validation": {
+        "MAE_hours": 585.4407224329103,
+        "RMSE_hours": 641.8510005296198,
+        "R2": -182.80716791809758
+      }
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 5,
+      "trees": 200,
+      "validation": {
+        "MAE_hours": 585.145073996014,
+        "RMSE_hours": 641.5833796965618,
+        "R2": -182.65392246922207
+      }
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 20,
+      "trees": 200,
+      "validation": {
+        "MAE_hours": 587.5827863349607,
+        "RMSE_hours": 641.971786048359,
+        "R2": -182.87635323698393
+      }
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 20,
+      "trees": 200,
+      "validation": {
+        "MAE_hours": 587.6503776064357,
+        "RMSE_hours": 642.0516782632303,
+        "R2": -182.92212223659305
+      }
+    }
+  ],
+  "metrics": {
+    "test": {
+      "MAE_hours": 322.13574412087854,
+      "RMSE_hours": 395.7120865666993,
+      "R2": -0.634663057030501
+    },
+    "validation": {
+      "MAE_hours": 585.145073996014,
+      "RMSE_hours": 641.5833796965618,
+      "R2": -182.65392246922207
+    },
+    "train_median_test": {
+      "MAE_hours": 347.0464510418863,
+      "RMSE_hours": 425.6553021883664,
+      "R2": -0.8914101354085433
+    },
+    "test_without_quality_suspects": {
+      "MAE_hours": 322.14393303115116,
+      "RMSE_hours": 395.7287712837666,
+      "R2": -0.6353228632351853
+    }
+  },
+  "preprocessing": {
+    "fit_partition": "train",
+    "fit_rows": 4312,
+    "imputer_medians": [
+      0.1602067552177737,
+      0.11232519558101428,
+      0.7195,
+      3.9036687196325133,
+      4.5671727774154665,
+      4220.9192123152425,
+      986.328125,
+      0.02158667887312497,
+      987.79296875,
+      0.016947315678470055,
+      2468.994140625,
+      0.014774972247781175
+    ],
+    "normalization": "RF는 정규화 없음"
+  },
+  "model_features": [
+    "rms",
+    "std",
+    "peak",
+    "kurtosis",
+    "crest_factor",
+    "fft_centroid_hz",
+    "fft_peak_1_hz",
+    "fft_peak_1_amplitude",
+    "fft_peak_2_hz",
+    "fft_peak_2_amplitude",
+    "fft_peak_3_hz",
+    "fft_peak_3_amplitude"
+  ],
+  "model_output": "C:\\bearing-pdm\\models\\rf_basic_holdout.joblib",
+  "model_sha256": "0f750e974a30dc3201714b6bab22bbe953280fccd638884d765b7ab51f02b8a9",
+  "seed": 42,
+  "train_median_hours": 245.43611111111113,
+  "test_evaluated_after_selection": true,
+  "refit_on_validation": false,
+  "caveats": [
+    "정답은 실제 고장이 아닌 시험 종료 기준 대리값",
+    "실험별 센서 수·측정 분포·시험 길이가 다름",
+    "독립 Test 실험은 하나뿐",
+    "품질 의심 마지막 기록도 주 평가에 포함"
+  ]
+}
